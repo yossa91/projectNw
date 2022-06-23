@@ -208,7 +208,6 @@ body {
 .page>ul>li>a{
     color: #333;
     font-size: 18px;
-    font-weight: 500;
 }
 .page>ul>li>.active{
     color: #fe7a4a;
