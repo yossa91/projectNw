@@ -1,0 +1,35 @@
+ 
+    .organiz{
+        width: 100%;
+        padding-top: 50%;
+        background:#f8f8f8 url('/img/nowon_introOrganiz/intro_organiz.png') center no-repeat;
+        background-size: 1000px auto;
+    }
+
+
+
+@media screen and (max-width: 1280px){
+
+
+}
+
+@media screen and (max-width: 960px){
+
+    .organiz{
+        width: 100%;
+        padding-top: 60%;
+    }
+
+
+}
+@media screen and (max-width: 720px){
+
+    /**/
+    .organiz{
+        width: 100%;
+        padding-top: 75%;
+        background:#f8f8f8 url('/img/intro_m_organiz.png') center no-repeat;
+        background-size: cover;
+    }
+
+}

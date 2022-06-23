@@ -1,0 +1,179 @@
+
+    .visionBox{
+        width: 100%;
+        padding:40px 60px 0;
+        box-sizing: border-box;
+    }
+    .vision_title{
+        width: 620px;
+        padding:25px 0;
+        border: 6px solid #fe7a4a;
+        border-radius: 100px;
+        text-align: center;
+        margin: auto;
+    }
+    .vision_title>p{
+        color: #fe7a4a;
+    }
+    .vision_title>h4{
+        font-size: 20px;
+    }
+    /**/
+    .vision_circle{
+        width: 686px;
+        height: 242px;
+        margin: 45px auto 0;
+        background: url('/img/nowon_introIntro/introVision.png') no-repeat;
+    }
+    /**/
+    .visionBox>span{
+        display: block;
+        width: 1px;
+        height: 52px;
+        margin: 30px auto;
+        background-color: #fe7a4a;
+    }
+    /**/
+    .vision_five{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .vision_five>article{
+        width: calc(20% - 4px);
+        position: relative;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
+        padding: 70px 0;
+        border-radius: 4px;
+        text-align: center;
+    }
+    .vision_five>article>h5{
+        display: block;
+        position: absolute;
+        left: 20px;
+        top:-30px;
+        font-size: 36px;
+        font-weight: bold;
+        color: #fe7a4a;
+    }
+    .vision_five>article>p span{
+        color: #fe7a4a;
+    }
+    /*노원문화 키워드*/
+    .keyworld{
+        width: 100%;
+        height: 580px;
+        margin-top: 15px;
+        background: #f8f8f8 url('/img/nowon_introIntro/keyworld.png') center no-repeat;
+    }
+@media screen and (max-width: 1280px){
+
+    /*노원문화원 비전과 미션*/
+    .visionBox{
+        width: 100%;
+        padding:40px 60px 0;
+        box-sizing: border-box;
+    }
+    .vision_title{
+        width: 80%;
+    }
+    /**/
+    .vision_circle{
+        width: 552px;
+        height: 200px;
+        background-size: contain;
+    }
+    /**/
+    .visionBox>span{
+        display: block;
+        width: 1px;
+        height: 52px;
+        margin: 30px auto;
+        background-color: #fe7a4a;
+    }
+    /**/
+    .vision_five{
+        flex-wrap: wrap;
+    }
+    .vision_five>article{
+        width: calc(33.333% - 4px);
+        margin-bottom: 30px;
+        padding: 40px 0;
+    }
+    .vision_five>article:nth-of-type(4),.vision_five>article:nth-of-type(5){
+        width: calc(50% - 4px);
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+
+
+
+}
+@media screen and (max-width: 720px){
+   
+    /*노원문화원 비전과 미션*/
+    .visionBox{
+        width: 100%;
+        padding:20px 15px 0;
+        box-sizing: border-box;
+    }
+    .vision_title{
+        width: 85%;
+        padding:15px 0;
+        border: 4px solid #fe7a4a;
+        border-radius: 100px;
+    }
+    .vision_title>p{
+        font-size: 12px;
+    }
+    .vision_title>h4{
+        font-size: 16px;
+    }
+    /**/
+    .vision_circle{
+        width: calc(100% - 30px);
+        height: auto;
+        padding-top: 80%;
+        margin: 20px auto 0;
+        background: url('/img/nowon_introIntro/intro_vision_mbg.png') center no-repeat;
+        background-size: contain;
+    }
+    /**/
+    .visionBox>span{
+        display: block;
+        width: 1px;
+        height: 52px;
+        margin: 30px auto;
+        background-color: #fe7a4a;
+    }
+    /**/
+    .vision_five{
+        flex-wrap: wrap;
+    }
+    .vision_five>article{
+        width: calc(50% - 4px);
+        margin-bottom: 30px;
+        padding: 25px 0;
+    }
+    .vision_five>article:nth-of-type(4){
+        margin-bottom: 30px;
+    }
+    .vision_five>article:last-of-type{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    /*노원문화 키워드*/
+    .keyworld{
+        width: 100%;
+        height: auto;
+        padding-top: 85%;
+        margin-top: 15px;
+        background: #f8f8f8 url('/img/nowon_introIntro/keyworld.png') center no-repeat;
+        background-size: contain;
+    }
+
+    
+}

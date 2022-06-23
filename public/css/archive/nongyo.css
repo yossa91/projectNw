@@ -1,0 +1,102 @@
+.nongyo_title{
+    background: #fac0ac url(../img/nongyo/song_bg.png) no-repeat 100% 100%;
+    text-align: center;
+    padding: 60px 0 70px 0;
+    margin: 0 0 20px 0;
+}
+.nongyo_txt1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.nongyo_txt2{
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    font-size: 1.05rem;
+    margin: 25px 0 0 0;
+    line-height: 28px;
+    width: 90%;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50px;
+}
+.nongyo_txt3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.nongyo_txt3>span{
+    display: block;
+    width: 7px;
+    height: 7px;
+    background:url(../img/sidemenu_sub_on.png);
+    margin-right: 10px;
+}
+.nongyo_txt3>h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+.nongyo_txt3_wrap>p{
+    margin-bottom: 20px;
+}
+.nongyo_play{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.nongyo_play>div{
+    width: 49%;
+    min-height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #fac0ac;
+    /* background-color: rgba(250, 192, 172, .5); */
+    /* background-color: #fac0ac; */
+
+}
+.nongyo_play>.nongyo_play_left>.nongyo_play_img{
+    /* width: 100%; */
+    padding-top: 20.58%;
+    background:url(../img/nongyo/song_bg03.png)no-repeat center;
+}
+.nongyo_play>.nongyo_play_left>p{
+    margin-bottom: 10px;
+}
+.nongyo_play_right>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nongyo_play_right li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.nongyo_play_right li:last-child{
+    margin-bottom: 0;
+}
+.nongyo_play_right audio{
+    width: 100px;
+    height: 20px;
+}
+@media only screen and (max-width: 1280px){
+    
+}
+@media only screen and (max-width: 960px){
+    .nongyo_txt2,.nongyo_txt3_wrap>p, .nongyo_play>.nongyo_play_left>p,.nongyo_play_right li>p{
+        font-size: 14px;
+    }
+    .nongyo_txt3>h4{
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width: 720px){
+    .nongyo_play{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .nongyo_play>div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

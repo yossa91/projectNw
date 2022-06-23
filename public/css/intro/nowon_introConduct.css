@@ -1,0 +1,253 @@
+@charset "UTF-8";   
+    /*검색란*/
+    .cdct_search{
+        width: 100%;
+        background-color: #f8f8f8;
+        padding: 30px 0;
+    }
+    .cdct_search>form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cdct_search>form>select{
+        color: #333;
+        line-height: 30px;
+        padding:0 15px;
+        width: 20%;
+        background: #fff url('/img/nowon_introConduct/intro_select.png') right 15px center no-repeat;
+        background-size: 10px auto;
+        border: 1px solid #333;
+        box-sizing: border-box;
+        -o-appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+    }
+    .cdct_search>form>select::-ms-expand { 
+        display: none;
+        outline: none;
+    }
+    .cdct_txt{
+        width: 50%;
+        border: 1px solid #333;
+        margin-left: 10px;
+        background-color: #fff;
+        display: flex;
+        justify-content:space-between;
+    }
+    .cdct_txt>input{
+        width: 85%;
+        line-height: 30px;
+        padding:0 0 0 15px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+    }
+    .cdct_txt>input:focus{
+        outline: none;
+    }
+    .cdct_txt>input::placeholder{
+        color:#b6b6b6;
+    }
+    .cdct_txt>label{
+        display: block;
+        width: 10%;
+        padding-top: 30px;
+        background:url('/img/nowon_introConduct/intro_search.png') center no-repeat;
+        background-size: 15px; 
+    }
+    #cdct_submit{
+        display: none;
+    }
+    /**/
+    .cdct_list{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cdct_list>table{
+        width: 100%;
+        text-align: center;
+    }
+    .cdct_list>table th{
+        line-height: 50px;
+        font-weight: 500;
+        border-bottom: 1px solid #fe7a4a;
+    }
+    .cdct_list>table td{
+        line-height: 47px;
+        border-bottom: 1px solid #f0f0f0;
+        vertical-align: middle;
+    }
+    /**/
+        .cdct_list>table tr td:nth-of-type(1){
+            width: 10%;
+        }
+        .cdct_list>table tr td:nth-of-type(2){
+            width: 55%;
+            text-align: left;
+        }
+        .cdct_list>table tr td:nth-of-type(3){
+            width: 10%;
+        }
+        .cdct_list>table tr td:nth-of-type(4){
+            width: 15%;
+        }
+        .cdct_list>table tr td:nth-of-type(5){
+            width: 10%;
+        }
+    /**/
+    .cdct_list>table tr td:nth-of-type(2) a{
+        display: block;
+        color: #333;
+    }
+    .cdct_list>table tr:not(:first-of-type):hover{
+        background: #f9f9f9;
+    }
+    /*글쓰기*/
+    .cdct_new{
+        margin-top: 40px;
+        width: 80px;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+        color: #fff;
+        background-color: #fe7a4a;
+        border-radius: 4px;
+    }
+    /**/
+    .num_menu{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .num_menu a{
+        color: #333;
+    }
+    .num_menu>div{
+        display: inline-block;
+        padding: 0 15px;
+    }
+    .num_menu_on{
+        color: #fe7a4a !important ;
+    }
+    /*---------------cerate.ejs css----------------*/
+    .it_writeBox{
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .it_wB_title{
+        width: 100%;
+        padding-left: 10px;
+        box-sizing: border-box;
+        outline: none;
+        line-height: 22px;
+    }
+    .it_wB_title:foucs ,.it_wB_description:focus { outline: none; }
+    .it_wB_description{
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 350px;
+        outline: none;
+        resize: none;
+    }
+    /*---------------page.ejs css----------------*/
+    .it_readBox{
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .it_rB_btn{
+
+        display: flex;
+        justify-content: end;
+        padding: 10px 15px;
+    }
+    .it_rB_btn>input{
+        border: 0;
+        line-height: 22px;
+        cursor: pointer;
+        background-color: #Fff;
+        color: #333;
+    }
+    .it_rB_dsc>.it_rB__title{
+        padding: 20px 0 0 15px;
+        font-size: 20px;
+        border-top: 1px solid #b6b6b6;
+        background-color: #f8f8f8;
+    }
+    .it_rB_dsc>.it_rB__day{
+        font-size: 14px;
+        padding: 10px 0 30px 15px;
+        color: #b6b6b6;
+        border-bottom: 1px solid #b6b6b6;
+        background-color: #f8f8f8;
+    }
+    .it_rB_dsc>.it_rB__dsc{
+        padding: 20px 0 0 15px;
+    }
+
+@media screen and (max-width: 1280px){
+
+    
+}
+
+@media screen and (max-width: 960px){
+
+
+
+}
+@media screen and (max-width: 720px){
+   
+    /*검색란*/
+    .cdct_search>form>select{
+        width: 30%;
+    }
+    .cdct_txt{
+        width: 60%;
+    }
+    .cdct_txt>input::placeholder{
+        font-size: 12px;
+    }
+    /**/
+    .cdct_list>table{
+        font-size: 12px;
+    }
+        /**/
+        .cdct_list>table tr th:nth-of-type(1),
+        .cdct_list>table tr td:nth-of-type(1){
+            display: none;
+        }
+        .cdct_list>table tr td:nth-of-type(2){
+            width: calc(100% - 170px);
+            box-sizing: border-box;
+            padding-left: 10px;
+        }
+        .cdct_list>table tr th:nth-of-type(3),
+        .cdct_list>table tr td:nth-of-type(3){
+            display: none;
+        }
+        .cdct_list>table tr td:nth-of-type(4){
+            width: 100px;
+        }
+        .cdct_list>table tr td:nth-of-type(5){
+            width: 70px;
+        }
+    
+    
+}
+@media screen and (max-width: 400px){
+    .cdct_list>table{
+        table-layout: fixed;
+    }
+    .cdct_list>table tr td:nth-of-type(2) a{
+        white-space:nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

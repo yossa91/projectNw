@@ -8,36 +8,14 @@ const connection = mysql.createConnection({
     database : "nwconduct",
     dateStrings : 'date'
 })
-//
-exports.allMembers = function(callback){
-    connection.query('SELECT * FROM member ORDER BY no DESC;',(err, results, fields) => {
+//메인
+exports.getAllMemos = function(callback){
+    connection.query('SELECT * FROM status ORDER BY no DESC;',(err, rows, fields) => {
         if(err) throw err;
-        callback(results);
-    });
-}
-//회원가입 멤버추가
-exports.insertMember = function(newId,newPsw,newName,number,phone,mail,mailing,sms,adress, callback){
-    connection.query(`INSERT INTO member(id,psw,name,phone,mobile,mail,mailing,sms,adrs) VALUES('${newId}','${newPsw}','${newName}','${number}','${phone}','${mail}','${mailing}','${sms}','${adress}')`), (err, result) => {
-        if(err) throw err;
-        callback();
-    }
-}
-//로그인
-exports.login = function(userId,userPsw, callback){
-    connection.query(`SELECT * FROM member WHERE id = '${userId}' AND psw = ${userPsw}`,(err, result, fields) => {
-        if(err)throw err;
-        if(result.length > 0){
-            result = true;
-            callback(result);
-        }else{
-            result = false;
-            callback();
-        }
+        callback(rows);
     });
 }
 
-
-/*
 //검색
 exports.search_process = function(seachbox, searchText, callback){
     if(seachbox == 'txt'){
@@ -109,6 +87,6 @@ exports.insertMemo = function(title,description,upload, callback){
         callback();
     });
  }
-*/
+
 
 

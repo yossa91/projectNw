@@ -298,13 +298,6 @@
 }
 
 @media screen and (max-width: 960px){
-   /**/    
-   main{
-    width: 100%;
-    box-sizing: border-box;
-    padding:0 30px;
-    display: block;
-    }
     /*section4 공통*/    
     .sec4>article{
         width: 100%;
@@ -358,9 +351,7 @@
 
 }
 @media screen and (max-width: 720px){
-    main{
-        padding:0 15px;
-    }
+
     /*노원문화참여마당*/
     .sec4 .s4_party>div{
         width: 85%;

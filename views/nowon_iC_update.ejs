@@ -1,0 +1,60 @@
+<div id="mainS4">
+        <div class="sideMenu">
+            <div class="side_title">
+                <h3>문화원 소개</h3>
+            </div>
+            <div>
+                <ul class="side_menu">
+                    <li><a href="/nowon_introText">
+                        인사말
+                    </a></li>
+                    <li><a href="/nowon_introIntro">
+                        노원문화원 소개
+                    </a></li>
+                    <li><a href="/nowon_introHistory">
+                        연혁
+                    </a></li>
+                    <li><a href="/nowon_introOrganiz">
+                        조직구성
+                    </a></li>
+                    <li><a href="/nowon_introBOD">
+                        임원현황/역대원장
+                    </a></li>
+                    <li><a href="/nowon_introConduct" class="side_menu_on">
+                        운영현황
+                    </a></li>
+                    <li><a href="/nowon_introFacility">
+                        시설현황
+                    </a></li>
+                    <li><a href="#">
+                        회원안내
+                    </a></li>
+                    <li><a href="#">
+                        협력기관
+                    </a></li>
+                    <li><a href="/nowon_introMap">
+                        찾아오시는 길
+                    </a></li>
+                </ul>
+            </div>
+        </div><!--sideMenu-->
+        
+        <div class="intro">
+            <h2>운영현황</h2>
+            <div class="it_writeBox">
+                <h3>운영현황 게시글 작성</h3>
+                <form action="/update/<%= row[0].no %>" method="POST">
+                    <p>제목</p>
+                    <input type="text" name="title" class="it_wB_title" value="<%= row[0].title %>">
+                    <p>내용작성</p>
+                    <textarea name="description" class="it_wB_description"><%= row[0].description %></textarea>
+                    <input type="file" name="upload">
+                    <div>
+                        <input type="submit" value="작성완료">
+                        <input type="button" value="취소" onclick="javascript:location.href='/'">
+                    </div>
+                </form>
+            </div>
+
+        </div><!--intro-->
+</div>

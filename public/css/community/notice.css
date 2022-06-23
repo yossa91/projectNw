@@ -1,0 +1,72 @@
+.page{
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page>a{
+    display: block;
+    margin-right: 10px;
+    padding: 5px;
+    color: #333;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.btn_write>a{
+    margin-top: 40px;
+    width: 70px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    background-color: #fe7a4a;
+    color: white;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+    main>section{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px){
+    main>section{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .sideMenu{
+        display: none;
+    }
+    .noti_noti{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px){
+    main>section{
+        padding: 0 15px;
+    }
+
+} 

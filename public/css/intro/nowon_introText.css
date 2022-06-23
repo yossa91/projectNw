@@ -1,0 +1,62 @@
+
+    /*인사말 이미지 타이틀*/
+    .itr_titleimg{
+        width: calc(100% - 30px);
+        padding:16% 0 16% 50px;
+        box-sizing: border-box;
+        margin: auto;
+        background: url('/img/nowon_introText/intro_text_title.png') center no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        position: relative;
+    }
+    .itr_titleimg>h2{
+        box-sizing: border-box;
+        font-size: 2rem;
+    }
+    .itr_titleimg>span{
+        color: #fff;
+        font-size: 18px;
+        position: absolute;
+        bottom: 10%;
+        left: 50px;
+    }
+    /**/
+    .itr_text{
+        width: calc(100% - 30px);
+        box-sizing: border-box;
+        margin:30px auto 0;
+    }
+
+@media screen and (max-width: 1280px){
+    /**/
+    .itr_titleimg>span{
+        bottom: 12%;
+    }
+}
+
+@media screen and (max-width: 960px){
+   /**/    
+    .itr_titleimg>h2{
+        font-size: 1.5rem;
+    }
+    .itr_titleimg>span{
+        bottom: 10%;
+    }
+}
+@media screen and (max-width: 720px){
+    /**/
+    .itr_titleimg{
+        padding:16% 0 16% 20px;
+        background: url('/img/nowon_introText/intro_text_mtitle.png') center no-repeat;
+        background-size: cover;
+    }
+    .itr_titleimg>h2{
+        font-size: 1.2rem;
+    }
+    .itr_titleimg>span{
+        font-size: 14px;
+        bottom: 3%;
+        left: 20px;
+    }
+}

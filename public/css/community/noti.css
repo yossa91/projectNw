@@ -1,0 +1,166 @@
+
+.commonWrap_box>h1{
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
+    color: #333;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px 0;
+}
+.commonWrap_box>h1>p{
+    font-size: 16px;
+    color: #666;
+}
+.commonWrap_box>section{
+    margin-top: 50px;
+    width: 100%;
+}
+.commonWrap_box>section>img{
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+section>div{
+    margin-bottom: 50px;
+}
+section>div>h4{
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+section>div>p{
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+.btn_list>a{
+    display: inline-block;
+    width: 130px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    background: #fe7a4a;
+    border-radius: 4px;
+    text-align: center;
+}
+.next{
+    margin: 20px 0;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #cdcdcd;
+}
+.next>li{
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    border-bottom: 1px solid #cdcdcd;
+}
+.next>li>p{
+    color: #333;
+    font-weight: 400;
+}
+.next>li>a{
+    display: block;
+    color: #333;
+    padding: 0 10px;
+    font-weight: 400;
+    overflow : hidden ;
+    white-space : nowrap ; 
+    text-overflow : ellipsis;
+}
+.yellow{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #fe7a4a;
+    margin-right: 10px;
+}
+.fff{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    margin-right: 10px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+
+
+
+@media screen and (max-width: 1280px){
+    main>section{
+        width: 100%;
+    }
+    .noti_noti>section{
+        width: 100%;
+    }
+    .noti_noti>section>img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px){
+    main>section{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .sideMenu{
+        display: none;
+    }
+    .noti_noti{
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn_list>a{
+        width: 100px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px){
+    main>section{
+        padding: 0 15px;
+    }
+    .noti_noti>h1>p{
+        font-size: 14px;
+    }
+    section>div>h4{
+        font-size: 18px;
+    }
+    section>div>p{
+        font-size: 14px;
+    }
+    .next>li{
+        padding: 14px;
+    }
+    .next>li>p{
+        font-size: 14px;
+    }
+    .next>li>a{
+        font-size: 14px;
+    }
+}

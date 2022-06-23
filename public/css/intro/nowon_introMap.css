@@ -1,0 +1,110 @@
+
+
+    .itrBox{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 10px 100px 10px;
+        background-color: #f8f8f8;
+    }
+    .itrMap{
+        width: 100%;
+    }
+    .itrMap>iframe{
+        width: 100%;
+        height: 550px;
+    }
+    /**/
+    .itrMapText{
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .itrMapText>h4{
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 0 10px 15px;
+        background: url('/img/nowon_introMap/title_dot.png') left center no-repeat;
+    }
+    .itrMapText>h5:first-of-type{
+        padding-top: 0;
+    }
+    .itrMapText>h5{
+        font-weight: 500;
+        padding:10px 0 10px 25px;
+    }
+    .itrMapText>p{
+        padding-left: 50px;
+    }
+    .itrMapText .sub7{
+        margin-right: 7px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 13px;
+        height: 17px;
+        background: url('/img/nowon_introMap/main_map.png') no-repeat;
+        background-position: 0 -34px;
+    }
+    .itrMapText .gansun{
+        margin-right: 10px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 24px;
+        height: 15px;
+        background: url('/img/nowon_introMap/main_map.png') no-repeat;
+    }
+    .itrMapText .jisun{
+        margin-right: 10px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 24px;
+        height: 15px;
+        background: url('/img/nowon_introMap/main_map.png') no-repeat;
+        background-position: 0 -18px;
+    }
+
+
+
+
+@media screen and (max-width: 1280px){
+
+
+}
+
+@media screen and (max-width: 960px){
+
+
+}
+@media screen and (max-width: 720px){
+    /*지도란*/
+    .itrMap>iframe{
+        height: 450px;
+    }
+    /**/
+    .itrMapText{
+        padding: 0 20px;
+    }      
+    .itrMapText>h4{
+        padding: 10px 0 10px 10px;
+    }
+    .itrMapText>h5{
+        font-weight: 500;
+        padding:10px 0 10px 10px;
+    }
+    .itrMapText>p{
+        padding-left: 25px;
+    }
+
+    
+}
+@media screen and (max-width: 550px){
+
+    .itrMapText{
+        padding: 0 0;
+    }  
+
+
+
+
+
+}
+

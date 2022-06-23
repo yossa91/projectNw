@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express')
 const expressLayouts = require('express-ejs-layouts');
 const router = express.Router();
 
@@ -7,89 +7,124 @@ const {check, validationResult} = require('express-validator');
 const db = require("../db");
 
 
-
-
-//메인
 router.use(expressLayouts);
+
 router.get('/',(req ,res) => {
   res.render('main');
+  //메인페이지 지정
   });
-
-
-//회원가입페이지
-router.get('/nowon_signup', (req,res) => {
-    res.render('nowon_signup');
+//로그인
+router.get('/nowon_login_id',(req ,res) => {
+  res.render("nowon_login_id");
 });
-//회원가입_프로세스
-router.post('/signupdata',(req, res, next) =>{
-  let errs = validationResult(req);
-  console.log(errs);
-    if(errs['errors'].length > 0){
-      res.render('nowon_signup',{errs : errs['errors']});
-    }else{
-      let param = JSON.parse(JSON.stringify(req.body));
-      var newId = param['newId']
-      var newPsw = param['newPsw']
-      var newName = param['newName']
-      var number = param['number_fst'] + param['number_scd'] + param['number_thd'];
-      var phone = param['phone_fst'] + param['phone_scd'] + param['phone_thd'];
-      var mail = param['mail_fst'] + param['mail_scd'];
-      var mailing = param['mailing']
-      var sms = param['sms']
-      var sms = param['sms']
-      var adress = param['adr_post'] + param['adr_fst'] + param['adr_scd'];
-      db.insertMember(newId,newPsw,newName,number,phone,mail,mailing,sms,adress, () => {
-        res.render('nowon_login');
-      });
-    }
+router.get('/nowon_login_psw',(req ,res) => {
+  res.render("nowon_login_psw");
 });
-
-//로그인페이지
-router.get('/nowon_login', (req,res) => {
-  res.render('nowon_login');
+router.get('/nowon_login',(req ,res) => {
+  res.render("nowon_login");
 });
-
-router.post('/logindata',(req, res, next) =>{
-  let errs = validationResult(req);
-  console.log(errs);
-    if(errs['errors'].length > 0){
-      res.render('nowon_signup',{errs : errs['errors']});
-    }else{
-      let param = JSON.parse(JSON.stringify(req.body));
-      var userId = param['userId']
-      var userPsw = param['userPsw']
-      db.login(userId,userPsw, (result) =>{
-        if(result == true){
-          console.log(`${userId}님이 로그인되었습니다.`);
-          res.render('main');
-        }else{
-          console.log('로그인정보를 확인하세요');
-          res.render('nowon_login');
-        }
-      });
-    }
+router.get('/nowon_signup',(req ,res) => {
+  res.render("nowon_signup");
+});
+//문화원 소개
+router.get('/nowon_introText',(req ,res) => {
+  res.render("nowon_introText");
+});
+router.get('/nowon_introIntro',(req ,res) => {
+  res.render("nowon_introIntro");
+});
+router.get('/nowon_introBOD',(req ,res) => {
+  res.render("nowon_introBOD");
+});
+router.get('/nowon_introFacility',(req ,res) => {
+  res.render("nowon_introFacility");
+});
+router.get('/nowon_introHistory',(req ,res) => {
+  res.render("nowon_introHistory");
+});
+router.get('/nowon_introMap',(req ,res) => {
+  res.render("nowon_introMap");
+});
+router.get('/nowon_introOrganiz',(req ,res) => {
+  res.render("nowon_introOrganiz");
 });
 
+//문화 행사 /대관
+router.get('/event_culture',(req ,res) => {
+  res.render("event_culture");
+});
+
+//문화강좌
+router.get('/class',(req ,res) => {
+  res.render("class");
+});
+router.get('/class_guide',(req ,res) => {
+  res.render("class_guide");
+});
+router.get('/class_info',(req ,res) => {
+  res.render("class_info");
+});
+
+//참여마당
+router.get('/notice',(req ,res) => {
+  res.render("notice");
+});
+router.get('/noti_607',(req ,res) => {
+  res.render("noti_607");
+});
+router.get('/noti_608',(req ,res) => {
+  res.render("noti_608");
+});
+router.get('/event',(req ,res) => {
+  res.render("event");
+});
+router.get('/event_4',(req ,res) => {
+  res.render("event_4");
+});
+router.get('/pressrelease',(req ,res) => {
+  res.render("pressrelease");
+});
+
+//노원아카이브
+router.get('/vision',(req ,res) => {
+  res.render("vision");
+});
+router.get('/nongyo',(req ,res) => {
+  res.render("nongyo");
+});
+router.get('/history_Wolgye',(req ,res) => {
+  res.render("history_Wolgye");
+});
+router.get('/history_Sanggye',(req ,res) => {
+  res.render("history_Sanggye");
+});
+router.get('/history_nowon',(req ,res) => {
+  res.render("history_nowon");
+});
+//---------------새창으로 띄우기 수정----------------
+router.get('/history_info',(req ,res) => {
+  res.render("history_info");
+});
 
 
-/*
-//페이지메인
-router.get('/', (req,res) => {
-  db.getAllMemos((results) => {
-    res.render('nowon_introConduct', { results : results });
+
+//게시판
+router.get('/nowon_introConduct', (req,res) => {
+  db.getAllMemos((rows) => {
+    res.render('nowon_introConduct', { rows : rows });
   });
   //res.send('test');
 });
 
 //글검색
-router.post('/search',(req, res) =>{
+router.post('/search',/* [check('title').isByteLength({min:1 , max:300})],*/(req, res) =>{
   let errs = validationResult(req);
   let param = JSON.parse(JSON.stringify(req.body));
   var seachbox = param['seachbox'];
   let searchText = param['searchText'];
     if(errs['errors'].length > 0){
     db.update_process(no, (row) => {
-      res.render('/', {row : row[0], errs : errs['errors']} );
+      res.render('/nowon_introConduct', {row : row[0], errs : errs['errors']} );
     });
   }else{
     db.search_process(seachbox, searchText, (rows) => {
@@ -117,7 +152,7 @@ const storage = multer.diskStorage({
 
   //수정------------그냥 글 안올라감 ;;------------------------
 router.get('/create',(req,res) => {
-  res.render('create');  
+  res.render('nowon_iC_create');  
 });
 router.post('/store', upload.single('upload'), [check('title').isByteLength({min:1 , max:100})],
   function(req,res, next){
@@ -132,7 +167,7 @@ router.post('/store', upload.single('upload'), [check('title').isByteLength({min
       let upload = req.file.filename;
       db.insertMemo(title,description,upload, function(){
         console.log(upload);
-        res.redirect('/');
+        res.redirect('/nowon_introConduct');
       });
     }
   });
@@ -143,7 +178,7 @@ router.post('/store', upload.single('upload'), [check('title').isByteLength({min
     //var no = req.url;
     var no = req.params.no;
     db.page(no, (result) => {
-      res.render('page',{result});
+      res.render('nowon_iC_page',{result});
     });
   });
 
@@ -162,7 +197,7 @@ router.get('/update/:no',(req, res) => {
     if(typeof no === 'undefined' || row.length <= 0){
       res.status(404).json({error : 'undefined memo'});
     }else{
-      res.render('update',{row});
+      res.render('nowon_iC_update',{row});
     }
   });
 });
@@ -176,11 +211,11 @@ router.post('/update/:no', [check('title').isByteLength({min:1 , max:300})],(req
     let description = param['description'];
     if(errs['errors'].length > 0){
       db.update_process(no, (row) => {
-        res.render('update', {row : row[0], errs : errs['errors']} );
+        res.render('nowon_iC_update', {row : row[0], errs : errs['errors']} );
       });
     }else{
       db.update_process(no, title, description, () => {
-        res.redirect('/');
+        res.redirect('/nowon_introConduct');
       });
     }
   });
@@ -189,15 +224,9 @@ router.post('/update/:no', [check('title').isByteLength({min:1 , max:300})],(req
   router.get('/delete/:no', (req, res) => {
     var no = req.params.no;
     db.delete(no, () => {
-      res.redirect('/');
+      res.redirect('/nowon_introConduct');
     });
 
 
   });
-
-*/
 module.exports = router;
-
-
-
-

@@ -1,0 +1,231 @@
+.main_wrap {
+    width: 1280px;
+    margin: auto;
+    display: flex;
+}
+
+/** first section **/
+.release_list {
+    width: calc(100% - 280px);
+}
+
+.release_list>h4 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 84px;
+    padding-left: 35px;
+    border-bottom: 1px solid #fe7a4a;
+    background: url(/img/event/title_icon.png) left center no-repeat;
+    background-size: 25px 25px;
+    margin-bottom: 50px;
+}
+
+.media_list a {
+    display: block;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.media_list>li:first-child a {
+    border-top: 1px solid #c6c6c6;
+}
+
+.media_img {
+    width: 220px;
+    height: 145px;
+    margin-right: 30px;
+}
+
+.media_img1 {
+    background: url(/img/press_release/pressrelease_img1.jpg) top center no-repeat;
+    background-size: cover;
+}
+.media_img2 {
+    background: url(/img/press_release/pressrelease_img2.jpg) top center no-repeat;
+    background-size: cover;
+}
+.media_img3 {
+    background: url(/img/press_release/pressrelease_img3.jpg) top center no-repeat;
+    background-size: cover;
+}
+.media_img4 {
+    background: url(/img/press_release/pressrelease_img4.jpg) top center no-repeat;
+    background-size: cover;
+}
+.media_img5 {
+    background: url(/img/press_release/pressrelease_img5.jpg) top center no-repeat;
+    background-size: cover;
+}
+.media_img6 {
+    background: url(/img/press_release/pressrelease_img6.jpg) top center no-repeat;
+    background-size: cover;
+}
+.media_img7 {
+    background: url(/img/press_release/pressrelease_img7.jpg) top center no-repeat;
+    background-size: cover;
+}
+.media_img8 {
+    background: url(/img/press_release/pressrelease_img8.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.media_txt {
+    position: relative;
+    width: 730px;
+}
+
+.media_txt>h5 {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #333;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.media_txt>p {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.6;
+    max-height: 3.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.media_txt>span {
+    font-size: 15px;
+    font-weight: 300;
+    color: #333;
+    padding-left: 20px;
+    background: url(/img/press_release/clock_acc.png) left center no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.page_num {
+    margin: 40px 0 40px 0;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_num>li>a {
+    display: block;
+    font-size: 20px;
+    font-weight: 550;
+    color: #777;
+    width: 32px;
+    height: 32px;
+    margin: 0 2px;
+}
+
+.page_num>li>.page_now {
+    color: #333;
+    font-weight: 700;
+}
+
+.page_a_left {
+    background: url(../img/event/icon_a_pre.png) center center no-repeat;
+}
+.page_left {
+    background: url(../img/event/icon_pre.png) center center no-repeat;
+}
+.page_right {
+    background: url(../img/event/icon_nex.png) center center no-repeat;
+}
+.page_a_right {
+    background: url(../img/event/icon_a_nex.png) center center no-repeat;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .main_wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .release_list {
+        width: 100%;
+        padding: 0 30px 0 0;
+        box-sizing: border-box;
+    }
+
+    .media_list a {
+        width: 100%;
+    }
+
+    .media_txt {
+        width: calc(100% - 220px);
+    }
+}
+
+@media only screen and (max-width : 960px) {
+    .release_list {
+        padding: 0 30px;
+    }
+
+    .media_list a {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #c6c6c6;
+    }
+
+    .media_img {
+        width: 100%;
+        padding-top: 40%;
+        margin: 0;
+    }
+
+    .media_txt {
+        width: 100%;
+    }
+
+    .media_txt>span {
+        position: static;
+        margin-top: 10px;
+        float: right;
+    }
+}
+
+@media only screen and (max-width : 720px) {
+    .release_list>h4 {
+        font-size: 24px;
+        line-height: 64px;
+        padding-left: 30px;
+        background-size: 20px 20px;
+        margin-bottom: 40px;
+    }
+    
+    .release_list {
+        padding: 0 15px;
+    }
+
+    .media_txt>h5 {
+        font-size: 16px;
+    }
+    
+    .media_txt>p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .media_txt>span {
+        font-size: 13px;
+    }
+}

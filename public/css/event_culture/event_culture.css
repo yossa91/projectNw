@@ -1,0 +1,187 @@
+.main_wrap {
+    width: 1280px;
+    margin: auto;
+    display: flex;
+}
+
+
+/** first section **/
+.m_event>h4 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 84px;
+    padding-left: 35px;
+    border-bottom: 1px solid #fe7a4a;
+    background: url(/img/event/title_icon.png) left center no-repeat;
+    background-size: 25px 25px;
+    margin-bottom: 50px;
+}
+
+.event_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1020px;
+    margin-left: -20px;
+    justify-content: space-between;
+}
+
+.event_list>li {
+    width: calc(25% - 20px);
+    margin: 0 0 25px 20px;
+    box-sizing: border-box;
+}
+
+.event_list div {
+    padding-top: 150%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    overflow: hidden;
+   
+}
+
+.event_img1 {
+    background-image: url(/img/event_culture/20220412103001.jpg);
+}
+.event_img2 {
+    background-image: url(/img/event_culture/20211221092553.jpg);
+}
+.event_img3 {
+    background-image: url(/img/event_culture/596f0074-ad47-4f0c-8e72-b41f5e426949.jpg);
+}
+.event_img4 {
+    background-image: url(/img/event_culture/c5e8e09a-865d-42e5-b379-2f5857225a30.jpg);
+}
+.event_img5 {
+    background-image: url(/img/event_culture/a25e3c25-a051-430f-afbd-392914c9a0e4.jpg);
+}
+.event_img6 {
+    background-image: url(/img/event_culture/df1afc19-7f36-40ab-96df-0b54bd36f9ab.jpg);
+}
+.event_img7 {
+    background-image: url(/img/event_culture/7a44dffa-02a5-4703-93e2-7c7a926550ee.jpg);
+}
+.event_img8 {
+    background-image: url(/img/event_culture/a2e6a453-7c94-49be-b1ef-f6fbdafa44e2.jpg);
+}
+.event_img9 {
+    background-image: url(/img/event_culture/9dabf068-ad84-4836-b3e5-efa99437c561.jpg);
+}
+.event_img10 {
+    background-image: url(/img/event_culture/f6fbcdc6-932f-4c6f-8f96-d03548f3adb6.jpg);
+}
+.event_img11 {
+    background-image: url(/img/event_culture/3fb39678-d019-418c-b3ac-71a77d2e84b7.jpg);
+}
+.event_img12 {
+    background-image: url(/img/event_culture/4eb18f98-6a27-47b9-a931-b68659bb3438.jpg);
+}
+
+.eventC_txt {
+    padding: 8px 0;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.eventC_txt>span {
+    font-size: 14px;
+    display: block;
+    color: #555;
+}
+
+.page_num {
+    margin: 40px 0 40px 0;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_num>li>a {
+    display: block;
+    font-size: 16px;
+    font-weight: 550;
+    color: #777;
+    width: 32px;
+    height: 26px;
+    margin: 0 2px;
+}
+
+.page_num>li>.page_now {
+    color: #fe7a4a;
+    font-weight: 700;
+}
+
+.page_a_left {
+    background: url(/img/event/icon_a_pre.png) center center no-repeat;
+}
+.page_left {
+    background: url(/img/event/icon_pre.png) center center no-repeat;
+}
+.page_right {
+    background: url(/img/event/icon_nex.png) center center no-repeat;
+}
+.page_a_right {
+    background: url(/img/event/icon_a_nex.png) center center no-repeat;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .main_wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .m_event {
+        width: 100%;
+        padding: 0 30px 0 0;
+        box-sizing: border-box;
+    }
+
+    .event_list {
+        width: calc(100% + 20px);
+    }
+}
+
+@media only screen and (max-width : 960px) {
+    .m_event {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width : 720px) {
+    .m_event>h4 {
+        font-size: 24px;
+        line-height: 64px;
+        padding-left: 30px;
+        background-size: 20px 20px;
+        margin-bottom: 40px;
+    }
+    
+    .m_event {
+        padding: 0 15px;
+    }
+    
+    .event_list {
+        width: calc(100% + 15px);
+        margin-left: -15px;
+    }
+
+    .event_list>li {
+        width: calc(33% - 15px);
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width : 470px) {
+    .event_list>li {
+        width: calc(50% - 15px);
+    }
+}

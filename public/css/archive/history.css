@@ -1,0 +1,217 @@
+
+.map{
+    width: 100%;
+    padding-top: 60%;
+    position: relative;
+}
+.sanggye::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/archive/dong05.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -11;
+    opacity: 0.5;
+}
+.wolgye::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/archive/dong01.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -11;
+    opacity: 0.5;
+}
+.map>img{
+    width: 30%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(4px 4px 4px);
+}
+.commonWrap_box>section{
+    margin: 10px 0 20px;
+}
+.commonWrap_box h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.commonWrap_box h1{
+    display: flex;
+    align-items: center;
+}
+.his>p{
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.tour>article{
+    width: 100%;
+    position: relative;
+    
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+    box-shadow:none;
+  }
+
+  .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .arrow{
+    position: absolute;
+    top: 80px;
+    width: 23px;
+    height: 37px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 500;
+
+}
+.swiper_his{
+    text-align: left;
+}
+
+.icon_r{
+    background-image: url(/img/cv_right.png);
+    right: 0;
+}
+.icon_l{
+    background-image: url(/img/cv_left.png);
+    left: 0;
+}   
+
+.tourImg{
+    width: 100%;
+    padding-top: 66.66%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+.imgW1{
+    background-image: url(/img/archive/Tombs.jpg);
+}
+.imgW2{
+    background-image: url(/img/archive/KakaoTalk_20190513_144741143.jpg);
+}
+.imgW3{
+    background-image: url(/img/archive/20170330_101809.jpg);
+}
+.imgW4{
+    background-image: url(/img/archive/2670613A56E5EF1F2F.jpg);
+}
+.imgS1{
+    background-image: url(/img/archive/400_118377443138915.jpg);
+}
+.imgS2{
+    background-image: url(/img/archive/9f5ffad9aa9f8.jpg
+    );
+}
+.imgS3{
+    background-image: url(/img/archive/2014092506564034433_1.jpg);
+}
+.imgS4{
+    background-image: url(/img/archive/85954_76585_628.jpg);
+}
+.tour figure figcaption{
+    overflow : hidden ; 
+    text-overflow : ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.tour figure figcaption>h2{
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.tour figure figcaption{
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px){
+    .history_map{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px){
+    main>section{
+        padding: 0 15px;
+    }
+    .history_map h1{
+        font-size: 18px;
+    }
+    .his>p{
+        font-size: 14px;
+    }
+    .swiper-slide figcaption>h4{
+        font-size: 14px;
+    }
+
+}

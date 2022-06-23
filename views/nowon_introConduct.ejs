@@ -1,0 +1,104 @@
+<div id="mainS4">
+        <div class="sideMenu">
+            <div class="side_title">
+                <h3>문화원 소개</h3>
+            </div>
+            <div>
+                <ul class="side_menu">
+                    <li><a href="/nowon_introText">
+                        인사말
+                    </a></li>
+                    <li><a href="/nowon_introIntro">
+                        노원문화원 소개
+                    </a></li>
+                    <li><a href="/nowon_introHistory">
+                        연혁
+                    </a></li>
+                    <li><a href="/nowon_introOrganiz">
+                        조직구성
+                    </a></li>
+                    <li><a href="/nowon_introBOD">
+                        임원현황/역대원장
+                    </a></li>
+                    <li><a href="/nowon_introConduct" class="side_menu_on">
+                        운영현황
+                    </a></li>
+                    <li><a href="/nowon_introFacility">
+                        시설현황
+                    </a></li>
+                    <li><a href="#">
+                        회원안내
+                    </a></li>
+                    <li><a href="#">
+                        협력기관
+                    </a></li>
+                    <li><a href="/nowon_introMap">
+                        찾아오시는 길
+                    </a></li>
+                </ul>
+            </div>
+        </div><!--sideMenu-->
+        
+        <div class="intro">
+            <h2>운영현황</h2>
+            <article class="itr_wrap">
+                <div class="cdct_search">
+                    <form action="/search" method="post">
+                        <select name="seachbox" id="seachbox">
+                            <option value="txt">내용</option>
+                            <option value="title">제목</option>
+                        </select>
+                        <div class="cdct_txt">
+                            <input type="text" name="searchText" placeholder="검색어를 입력해주세요">
+                            <label for="cdct_submit">
+                            </label>
+                            <input type="submit" id="cdct_submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="cdct_list">
+                    <table>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>첨부파일</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                        </tr>
+                        <% rows.forEach((row, index) => { %>
+                            <tr>
+                                <td><%= row.no %></td>
+                                <td><a href="/page/<%=row.no%>"><%= row.title %></a></td>
+                                <td class="uploadFile"><%= row.upload %></td>
+                                <td><%= row.day %></td>
+                                <td><%= row.hit %></td>
+                                </tr>
+                                
+                        <% }); %>
+                        
+                    </table>
+                    <a class="cdct_new" href="javascript:location.href='/create'" class="newBtn">글쓰기</a>
+                    <div class="num_menu">
+                        <a href=""><img src="/img/common/icon_a_pre.png" alt=""></a>
+                        <a href=""><img src="/img/common/icon_pre.png" alt=""></a>
+                        <div>
+                            <a href="" class="num_menu_on">1</a>
+                        </div>
+                        <a href=""><img src="/img/common/icon_nex.png" alt=""></a>
+                        <a href=""><img src="/img/common/icon_a_nex.png" alt=""></a>
+                    </div>
+                </div>
+            </article>
+
+            <script>
+                var chk = document.querySelectorAll('.uploadFile');
+                for(var i =0; i < chk.length; i++){
+                    if(chk[i].innerText !== ''){
+                        chk[i].innerHTML = '<img src="/img/nowon_introConduct/intro_data.png" alt="">';
+                    }else{
+                        chk[i].innerHTML = '';
+                    }
+                }
+            </script>
+        </div><!--intro-->
+</div>

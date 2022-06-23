@@ -1,0 +1,147 @@
+.sublogo{
+    background: url('/img/common/title_icon.png') left center no-repeat;
+    background-size: 25px;
+    padding-left: 35px;
+    line-height: 84px;
+    font-size: 30px;
+    border-bottom: 1px solid #fe7a4a;
+    margin-bottom: 50px;
+}
+.commonWrap_box>article{
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.commonWrap_box>article>h2{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.commonWrap_box>article>h2>span{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #fe7a4a;
+    margin-right: 10px;
+}
+.v_logo{
+    width: 60%;
+}
+.v_imgW{
+    width: 100%;
+}
+.v_imgM{
+    width: 100%;
+    display: none;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.container_img>h2{
+    font-size: 30px;
+}
+.commonWrap_box>article>h3{
+    margin: 10px 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.commonWrap_box>article>p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.symbol{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.symbol>h3{
+    font-size: 20px;
+    height: 160px;
+}
+.symbol_img{
+    width: 260px;
+    border: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.symbol_img>img{
+    vertical-align: middle;
+}
+.symbol_txt{
+    width: calc(100% - 260px);
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.sing>img{
+    width: 580px;
+}
+
+
+
+@media screen and (max-width: 1280px){
+    main>section{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 960px){
+    main>section{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .vision{
+        width: 100%;
+        margin-left: 0;
+    }
+    .symbol_img{
+        width: 100%;
+    }
+    .symbol_txt{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 720px){
+    main>section{
+        padding: 0 15px;
+    }
+    .v_imgW{
+        display: none;
+    }
+    .v_imgM{
+        display: block;
+    }
+    .vision>article>h2{
+        font-size: 18px;
+    }
+    .vision>article>p{
+        font-size: 14px;
+    }
+    .symbol>h3{
+        font-size: 18px;
+    }
+    .symbol_txt>h4{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .sing>img{
+        width: 100%;
+    }
+    .v_logo{
+        width: 300px;
+    }
+}

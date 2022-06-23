@@ -1,0 +1,163 @@
+
+    .itr_txt>div{
+        padding: 20px 0;
+        display:flex;
+    }
+    .itr_txt>div>img{
+        width: 50%;
+    }
+    /*시설현황 탭메뉴*/
+    .fc_box{
+        width: 100%;
+        padding: 0 40px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .fc_box>input{
+        display: none;
+    }
+    .fc_box>label{
+        display: block;
+        width: 20%;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        background-color: #f8f8f8;
+    }
+    .fc_box input:checked + label{
+        border-bottom: 4px solid #fe7a4a;
+    }
+    .fc_box label:hover{
+        border-bottom: 4px solid #ffd4c5;
+    }
+    .fc_box>div{
+        width: 100%;
+        padding: 50px 0 50px;
+        display: none;
+        background-color: #f8f8f8;
+    }
+    #fc_m_b1:checked ~ .fc_b1box,
+    #fc_m_f1:checked ~ .fc_f1box,
+    #fc_m_f2:checked ~ .fc_f2box,
+    #fc_m_f3:checked ~ .fc_f3box,
+    #fc_m_f4:checked ~ .fc_f4box{
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    /**/
+    .fc_box>div>.fc_maptitle{
+        width: 32%;
+        padding:0 15px;
+        box-sizing: border-box;
+    }
+    .fc_box>div>.fc_maptitle>h4{
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #fe7a4a;
+    }
+    .fc_box>div>.fc_maptitle>ul{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #333;
+        margin-bottom: 10px;
+    }
+    .fc_box>div>.fc_mapimg{
+        width: 67%;
+        height: 350px;
+    }
+    .fc_box>div .fc_b1{
+        background: url('/img/nowon_introFacility/main_fc_b1.png') center no-repeat;
+        background-size: contain;
+    }
+    .fc_box>div .fc_f1{
+        background: url('/img/nowon_introFacility/main_fc_f1.png') center no-repeat;
+        background-size: contain;
+    }
+    .fc_box>div .fc_f2{
+        background: url('/img/nowon_introFacility/main_fc_f2.png') center no-repeat;
+        background-size: contain;
+    }
+    .fc_box>div .fc_f3{
+        background: url('/img/nowon_introFacility/main_fc_f3.png') center no-repeat;
+        background-size: contain;
+    }
+    .fc_box>div .fc_f4{
+        background: url('/img/nowon_introFacility/main_fc_f4.png') center no-repeat;
+        background-size: contain;
+    }
+
+
+@media screen and (max-width: 1280px){
+
+
+}
+
+@media screen and (max-width: 960px){
+
+
+}
+@media screen and (max-width: 720px){
+    
+    /*시설현황 탭메뉴*/
+    .fc_box{
+        padding: 0 15px;
+    }
+    .fc_box>div{
+    padding: 50px 0 20px;
+    }
+    /**/
+    .fc_box>div>.fc_maptitle{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding:0 10px;
+        font-size: 14px;
+    }
+    .fc_box>div>.fc_maptitle>h4{
+        display: none;
+    }
+    .fc_box>div>.fc_maptitle>ul{
+        width: 120px;
+        padding-bottom: 0;
+        border-bottom: 0;
+        margin-bottom: 0;
+        border-right: 1px solid #333;
+    }
+    .fc_box>div>.fc_maptitle>p{
+        width: calc(100% - 120px);
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+    .fc_box>div>.fc_mapimg{
+        margin-top: 20px;
+        width: 100%;
+        height:0;
+        padding-top: 70%;
+    }
+
+
+    
+}
+@media screen and (max-width: 500px){
+    /*공용*/
+    .itr_txt>div>img:first-of-type{
+        display: none;
+    }
+    .itr_txt>div>img{
+        width: 100%;
+    }
+    .fc_box>div>.fc_mapimg{
+        margin-top: 0;
+    }
+    /*시설현황 탭메뉴*/
+    .fc_box>div{
+    padding: 30px 0 0;
+    }
+
+
+}
+

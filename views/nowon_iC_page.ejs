@@ -1,0 +1,57 @@
+<div id="mainS4">
+        <div class="sideMenu">
+            <div class="side_title">
+                <h3>문화원 소개</h3>
+            </div>
+            <div>
+                <ul class="side_menu">
+                    <li><a href="/nowon_introText">
+                        인사말
+                    </a></li>
+                    <li><a href="/nowon_introIntro">
+                        노원문화원 소개
+                    </a></li>
+                    <li><a href="/nowon_introHistory">
+                        연혁
+                    </a></li>
+                    <li><a href="/nowon_introOrganiz">
+                        조직구성
+                    </a></li>
+                    <li><a href="/nowon_introBOD">
+                        임원현황/역대원장
+                    </a></li>
+                    <li><a href="/nowon_introConduct" class="side_menu_on">
+                        운영현황
+                    </a></li>
+                    <li><a href="/nowon_introFacility">
+                        시설현황
+                    </a></li>
+                    <li><a href="#">
+                        회원안내
+                    </a></li>
+                    <li><a href="#">
+                        협력기관
+                    </a></li>
+                    <li><a href="/nowon_introMap">
+                        찾아오시는 길
+                    </a></li>
+                </ul>
+            </div>
+        </div><!--sideMenu-->
+        
+        <div class="intro">
+            <h2>운영현황</h2>
+                <div class="it_readBox">
+                    <div class="it_rB_btn">
+                        <input type="button" onclick="javascript:location.href='/update/<%=result[0].no%>'" value="수정">
+                        <input type="button" onclick="javascript:location.href='/delete/<%=result[0].no%>'" value="삭제">
+                    </div>
+                    <div class="it_rB_dsc">
+                        <h3 class="it_rB__title"><%= result[0].title %></h3>
+                        <p class="it_rB__day"><%= result[0].day %></p>
+                        <p class="it_rB__dsc"><%= result[0].description %></p>   
+                        <p class="it_rB__dsc"><a href='/download/<%= result[0].upload %>'><%= result[0].upload%></a></p>
+                    </div>
+                </div>
+        </div><!--intro-->
+</div>

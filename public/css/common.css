@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap');
+
 body {
     font-family: "Noto Sans KR", sans-serif;
     width: 100%;
@@ -93,7 +93,7 @@ body {
     color: #333333;
     font-size: 20px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .gnb>li:last-child a {
@@ -194,7 +194,25 @@ body {
     background: url(../img/common/title_icon.png)left no-repeat;
     background-size: 25px;
 }
-
+.page{
+    margin-bottom: 30px;
+}
+.page>ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.page>ul>li{
+    padding: 0 10px;
+}
+.page>ul>li>a{
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+.page>ul>li>.active{
+    color: #fe7a4a;
+}
 /*footer*/    
 footer{
     width: 100%;
