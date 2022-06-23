@@ -1,0 +1,374 @@
+@charset "UTF-8";   
+    /*임시*/
+    body{
+        color:#333;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 16px;
+    }
+    /**/    
+    main{
+        width: 1280px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    /*사이드메뉴(웹사이즈에서 사용)*/
+    .sideMenu{
+        width: 240px;
+    }
+    .side_title{
+        width: 100%;
+        background: url('../img/nowon_signup/sidemenu_title.png')center no-repeat;
+    }
+    .side_title>h3{
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 130px;
+        text-align: center;
+        color: #fff;
+    }
+    /**/
+    .side_menu{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .side_menu>li>a{
+        display: inline-block;
+        width: 100%;
+        font-size: 17px;
+        line-height: 54px;
+        color: #333;
+        border-bottom: 1px solid #f8f8f8 ;
+        background: url('../img/nowon_signup/sidemenu_off.png') right center no-repeat;
+    }
+    .side_menu>li>.side_menu_on{
+        color: #fe7a4a;
+        background: url('../img/nowon_signup/sidemenu_on.png') right center no-repeat;
+    }
+    /*회원가입폼시작*/
+    .signupPg{
+        width: 1000px;
+    }
+    .signupTt{
+        display: flex;
+        padding-top: 50px;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .signupTt>h3{
+        font-size: 24px;
+    }
+    .signupTt>span{
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    .signupPg>div{
+        border-bottom: 1px solid #c6c6c6;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+    }
+    .signupPg>div>h4{
+        display: block;
+        width: 200px;
+        line-height: 70px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        background-color: #f8f8f8;
+        margin:0 30px 0 0;
+    }
+    .signupPg>div input{
+        font-size: 16px;
+        line-height: 40px;
+        margin: 0;
+        border: 1px solid #c6c6c6;
+        border-radius: 4px;
+        outline: none;
+        padding:0 20px;
+        box-sizing: border-box;
+    }
+    .signupPg>div input::placeholder{
+        color: #c6c6c6;
+        letter-spacing: -1px;
+    }
+    .signupPg>div input:focus{
+        outline: none;
+    }
+    .signupPg>div input[type="number"]::-webkit-outer-spin-button,
+    .signupPg>div input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    input[type=number] {
+        /*파폭 input number 방향키 없애기*/
+        -moz-appearance: textfield;
+    }
+    .signupPg>div button{
+        border: 0;
+        margin: 0 0 0 16px ;
+        line-height: 42px;
+        padding: 0 20px;
+        border-radius: 4px;
+        background-color: #c6c6c6;
+        vertical-align: middle;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .signupPg>div select{
+        font-size: 16px;
+        line-height: 40px; 
+        padding: 0 50px 0 20px;
+        border: 1px solid #c6c6c6;
+        border-radius: 4px;
+        outline: none;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: url(../img/nowon_signup/intro_select.png) right 15px center no-repeat;
+        background-size: 6px auto;
+    }
+    .signupPg>div select>option{
+        background-color: #fff;
+    }
+    .signupPg>div .w380{
+        width: 380px;
+    }
+    .signupPg>div .w200{
+        width: 200px;
+    }
+    .signupPg>div .w250{
+        width: 230px;
+    }
+    .signupPg>.adrBox h4{
+        line-height: 160px;
+    }
+
+    .signupPg>.adrBox>div input:not(:first-of-type){
+        display: block;
+        margin-top: 5px;
+        width: 500px;
+    }
+    /**/
+    .signupCf{
+        width: 100%;
+        text-align: center;
+        padding: 80px 0;
+    }
+    .signupCf button{
+        border: 0;
+        line-height: 42px;
+        padding: 0 60px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .signupCf .signypSm{
+        background-color: #fe7a4a;
+        color: #fff;
+        margin-right: 10px;
+    }
+    .signupCf .signypCc{
+        background-color: #c6c6c6;
+        color: #333;
+    }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+    /**/    
+    main{
+        width: 100%;
+    }
+    /**/
+    .sideMenu{
+        width: 240px;
+        margin-right: 40px ;
+    }
+    /*회원가입폼시작*/
+    .signupPg>div>h4{
+        width: 160px;
+        padding-left: 30px;
+    }
+    /**/
+    .signupPg>div .w200{
+        width: 170px;
+    }
+    .signupPg>div .w250{
+        width: 170px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 960px){
+    /**/    
+    main{
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 30px;
+    display: block;
+    }
+    /**/
+    .sideMenu{
+        display: none;
+    }
+    /*회원가입폼시작*/
+    .signupPg{
+        width: 100%;
+    }
+    .signupPg>div>h4{
+        width: 150px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .signupPg>div input{
+        padding:0 10px;
+    }
+    .signupPg>div input::placeholder{
+        font-size: 14px;
+    }
+    .signupPg>div button{
+        margin: 0 0 0 10px;
+        padding: 0 15px;
+    }
+    .signupPg>div select{
+        padding: 0 30px 0 10px;
+    }
+    .signupPg>div select>option{
+        background-color: #fff;
+        padding: 10px 0;
+        border: 1px solid #c6c6c6;
+    }
+    .signupPg>div .w380{
+        width: 300px;
+    }
+    .signupPg>div .w200{
+        width: 150px;
+    }
+    .signupPg>.adrBox h4{
+        line-height: 160px;
+    }
+
+    .signupPg>.adrBox>div input:not(:first-of-type){
+        display: block;
+        margin-top: 5px;
+        width: 450px;
+    }
+    
+
+
+}
+@media screen and (max-width: 720px){
+    main{
+        padding:0 15px;
+    }
+    /*회원가입폼시작*/
+    .signupTt>h3{
+        font-size: 20px;
+    }
+    .signupTt>span{
+        font-size: 14px;
+        padding-left: 0;
+    }
+    .signupPg>div{
+        display: block;
+    }
+    .signupPg>.signupTt{
+        display: flex;
+    }
+    .signupPg>div>h4{
+        width: 100%;
+        line-height: 30px;
+        padding-left: 10px;
+        margin:0;
+    }
+    .signupPg>div>div{
+        width: 100%;
+        padding: 7px 10px 25px;
+        box-sizing: border-box;
+    }
+    .signupPg>div input{
+        font-size: 14px;
+        line-height: 35px;
+        padding:0 10px;
+    }
+    .signupPg>div input::placeholder{
+        font-size: 12px;
+    }
+    .signupPg>div button{
+        width: 100%;
+        margin: 10px 0 0;
+        line-height: 35px;
+        padding: 0;
+        font-size: 14px;
+    }
+    .signupPg>div select{
+        font-size: 16px;
+        line-height: 35px; 
+        padding: 0 15px 0 5px;
+        background: url(../img/nowon_signup/intro_select.png) right 7px center no-repeat;
+        background-size: 6px auto;
+    }
+    .signupPg>div .w380{
+        width: 100%;
+    }
+    .signupPg>.numberBox>div,
+    .signupPg>.phoneBox>div,
+    .signupPg>.mailBox>div,
+    .signupPg>.adrBox>div{
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    .signupPg>div .w200{
+        width: calc(50% - 45px);
+    }
+    .signupPg>div .w250{
+        width: calc(50% - 5px);
+    }
+    
+    .signupPg>.mailBox .mail_adr_ch{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .signupPg>.mailBox .mail_adrCh{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .signupPg>.smsBox p,
+    .signupPg>.mailingBox p{
+        margin-bottom: 10px;
+    }
+    .signupPg>.adrBox h4{
+        width: 100%;
+        line-height: 30px;
+        padding-left: 10px;
+        margin:0;
+    }
+    .signupPg>.adrBox input{
+        width: 100%;
+
+    }
+    .signupPg>.adrBox>div input:not(:first-of-type){
+        width: 100%;
+    }
+    /**/
+    .signupCf{
+        padding: 50px 0 70px;
+    }
+    .signupCf button{
+        padding: 0 15%;
+    }
+
+    
+}
+

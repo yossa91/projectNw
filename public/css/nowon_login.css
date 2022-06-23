@@ -1,0 +1,248 @@
+@charset "UTF-8";   
+    /*임시*/
+    body{
+        color:#333;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 16px;
+    }
+    /**/    
+    main{
+        width: 1280px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    /*사이드메뉴(웹사이즈에서 사용)*/
+    .sideMenu{
+        width: 240px;
+    }
+    .side_title{
+        width: 100%;
+        background: url('../img/nowon_login/sidemenu_title.png')center no-repeat;
+    }
+    .side_title>h3{
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 130px;
+        text-align: center;
+        color: #fff;
+    }
+    /**/
+    .side_menu{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .side_menu>li>a{
+        display: inline-block;
+        width: 100%;
+        font-size: 17px;
+        line-height: 54px;
+        color: #333;
+        border-bottom: 1px solid #f8f8f8 ;
+        background: url('../img/nowon_login/sidemenu_off.png') right center no-repeat;
+    }
+    .side_menu>li>.side_menu_on{
+        color: #fe7a4a;
+        background: url('../img/nowon_login/sidemenu_on.png') right center no-repeat;
+    }
+    /*로그인박스*/
+    .loginPg{
+        width: 1000px;
+        height: calc(100vh - 374px);
+        text-align: center;
+        padding-top: 70px;
+        box-sizing: border-box;
+    }
+    .loginPg>h3{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .loginPg>h3>span{
+        color: #fe7a4a;
+    }
+    /**/
+    .loginBox{
+        margin-top: 20px;
+        border:6px solid #F8F8F8 ;
+        padding: 65px 0;
+        box-sizing: border-box;
+    }
+    .loginBox form div{
+        margin: auto;
+        width: 380px;
+        height: 40px;
+        border: 1px solid #C6C6C6;
+        border-radius: 4px;
+        text-align: left;
+    }
+    .loginBox form div:first-of-type{
+        background: url('../img/nowon_login/login_user.png') left 10px center no-repeat;
+        background-size: auto 29px;
+        margin-bottom: 7px;
+    }
+    .loginBox form div:last-of-type{
+        background: url('../img/nowon_login/login_pwd.png') left 14px center no-repeat;
+        background-size: auto 29px;
+        margin-bottom: 20px;
+    }
+    .loginBox form div>input{
+        width: 300px;
+        font-size: 16px;
+        line-height: 40px;
+        outline: none;
+        border:none;
+        padding: 0;
+        margin-left: 50px;
+    }
+    .loginBox form div>input:focus{
+        outline: none;
+    }
+    .loginBox form div>input::placeholder{
+        color:#C6C6C6 ;
+    }
+    .loginBox form>button{
+        width: 380px;
+        line-height: 40px;
+        background-color: #fe7a4a;
+        color: #fff;
+        border-radius: 4px;
+        border: 0;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .loginBox>.loginLinkMenu{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .loginBox>.loginLinkMenu a{
+        color: #333;
+        padding:0 15px;
+    }
+    .loginBox>.loginLinkMenu a:hover{
+        color: #C6C6C6;
+    }
+    .loginBox>.loginLinkMenu a:not(:last-of-type){
+        border-right: 1px solid #333;
+    }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+    /**/    
+    main{
+        width: 100%;
+    }
+    /**/
+    .sideMenu{
+        width: 240px;
+        margin-right: 40px ;
+    }
+    /*로그인박스*/
+    .loginPg{
+        height: calc(100vh - 331px);
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 960px){
+    /**/    
+    main{
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 30px;
+    display: block;
+    }
+    /**/
+    .sideMenu{
+        display: none;
+    }
+    /*로그인박스*/
+    .loginPg{
+        width: 100%;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    /**/
+    .loginBox{
+        width: 85%;
+        margin: 20px auto 0;
+    }
+    
+
+    
+
+
+}
+@media screen and (max-width: 720px){
+    main{
+        padding:0 15px;
+    }
+    /*로그인박스*/
+    .loginBox{
+        width: 80%;
+    }
+    
+
+    
+}
+@media screen and (max-width: 570px){
+    /*로그인박스*/
+    .loginPg>h3{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .loginPg>p{
+        font-size: 14px;
+    }
+    /**/
+    .loginBox{
+        width: 100%;
+    }
+    .loginBox form div{
+        width: 90%;
+    }
+    .loginBox form div:first-of-type{
+        background-size: auto 20px;
+    }
+    .loginBox form div:last-of-type{
+        background-size: auto 20px;
+    }
+    .loginBox form div>input{
+        width: calc(100% - 70px);
+        margin-left: 50px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .loginBox form>button{
+        width: 90%;
+        margin: auto;
+    }
+    .loginBox>.loginLinkMenu{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .loginBox>.loginLinkMenu a{
+        font-size: 14px;
+        padding:0 10px;
+    }
+    .loginBox>.loginLinkMenu a:not(:last-of-type){
+        border-right: 1px solid #333;
+    }
+    
+}

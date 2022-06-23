@@ -1,0 +1,154 @@
+<div id="mainS4">
+        <div class="sideMenu">
+            <div class="side_title">
+                <h3>로그인</h3>
+            </div>
+            <div>
+                <ul class="side_menu">
+                    <li><a href="/nowon_login">
+                        로그인
+                    </a></li>
+                    <li><a href="/nowon_signup" class="side_menu_on">
+                        회원가입
+                    </a></li>
+                    <li><a href="/nowon_login_id">
+                        아이디찾기
+                    </a></li>
+                    <li><a href="/nowon_login_psw">
+                        비밀번호찾기
+                    </a></li>
+                </ul>
+            </div>
+        </div><!--sideMenu-->
+        
+        <form action="signupdata" method="post">
+            <div class="signupPg">
+                <form action="">
+                    <div class="signupTt">
+                    <h3>가입정보</h3>
+                    <span>*필수입력</span>
+                </div>
+                <div class="idBox">
+                    <h4>* 아이디</h4>
+                    <div>
+                        <input type="text" class="id import w380" name = "newId" placeholder="가입 후 아이디 변경 불가">
+                        <button type="button" class="idBtn" name="idcheck">중복확인</button>
+                    </div>
+                </div>
+                <div class="pswBox">
+                    <h4>* 비밀번호</h4>
+                    <div>
+                        <input type="password" class="psw import w380"  name = "newPsw" placeholder="6~16자의 영문,숫자,특수문자 조합">
+                    </div>
+                </div>
+                <div class="pswChBox">
+                    <h4>* 비밀  번호 확인</h4>
+                    <div>
+                        <input type="password" class="pswCh import w380" name = "newPswCh">
+                        <span class="checkPsw" style="color: red; font-size: 14px;"></span>
+                    </div>
+                </div>
+                <div class="nameBox">
+                    <h4>* 이름</h4>
+                    <div>
+                        <input type="text" class="name import w380" name = "newName">
+                </div>
+                </div>
+                <div class="numberBox">
+                    <h4>전화번호</h4>
+                    <div>
+                        <select name="number_fst" id="">
+                            <option value="02">02</option>
+                            <option value="031">031</option>
+                            <option value="032">032</option>
+                            <option value="033">033</option>
+                            <option value="041">041</option>
+                            <option value="042">042</option>
+                        </select>
+                        <span> - </span>
+                        <input type="text" class="number_scd w200"  name = "number_scd" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength='4'>
+                        <span> - </span>
+                        <input type="text" class="number_thd w200"  name = "number_thd" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength='4'>
+                    </div>
+                </div>
+                <div class="phoneBox">
+                    <h4>* 휴대폰번호</h4>
+                    <div>
+                        <select name="phone_fst" class="phone_fst">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                            <option value="019">019</option>
+                        </select>
+                        <span> - </span>
+                        <input type="text" class="phone_scd import w200" name = "phone_scd" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength='4'>
+                        <span> - </span>
+                        <input type="text" class="phone_thd import w200" name = "phone_thd" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength='4'>
+                    </div>
+                </div>
+                <div class="mailBox">
+                    <h4>* 이메일</h4>
+                    <div>
+                        <input type="txt" class="mail import w250" name="mail_fst">
+                        <input type="txt" class="mail_adr import w250" name="mail_scd">
+                        <select name="mail_adrCh" class="mail_adrCh" onchange="mailIn(this.value)">
+                            <option value="">메일주소 선택</option>
+                            <option value="">직접입력</option>
+                            <option value="@naver.com">@naver.com</option>
+                            <option value="@nate.com">@nate.com</option>
+                            <option value="@hanmail.com">@hanmail.com</option>
+                            <option value="@gmail.com">@gmail.com</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="mailingBox">
+                    <h4>이메일 수신여부</h4>
+                    <div>
+                        <p>노원문화원의 소식을 메일로 받으시겠습니까?</p>
+                            <span>
+                                <input type="radio" name="mailing" value="y" id="mailngY" checked>
+                                <label for="mailngY">예</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="mailing" value="n" id="mailngN">
+                                <label for="mailngN">아니오</label>
+                            </span>
+                    </div>
+                </div>
+                <div class="smsBox">
+                    <h4>SMS 수신여부</h4>
+                    <div>
+                        <p>노원문화원의 소식을 문자로 받으시겠습니까?</p>
+                        <span> 
+                            <input type="radio" name="sms" value="y" id="smsY" checked>
+                            <label for="smsY">예</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="sms" value="n" id="smsN">
+                            <label for="smsN">아니오</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="adrBox">
+                    <h4>* 주소</h4>
+                    <div>
+                        <input type="text" class="adr_fst import" name="adr_post" readonly>
+                        <button type="button" onclick="openZipSearch()">우편번호 검색</button>
+                        <input type="text" class="adr_scd import" name="adr_fst" readonly>
+                        <input type="text" class="adr_thd import" name="adr_scd">
+                    </div>
+                </div>
+                <article class="signupCf">
+                    <button type="submit" class="signypSm">가입</button>
+                    <button type="button" class="signypCc">취소</button>
+                </article>
+            </div><!--signupPg-->
+        </form>
+
+    <script async="async" src="http://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="./js/signup.js" type="text/javascript"></script>
+</div>
+

@@ -1,0 +1,482 @@
+@charset "UTF-8";   
+
+    /*section4 공통*/    
+    .sec4{
+        width: 1280px;
+        margin: auto;
+    }
+    .sec4 .bor4{
+        border-radius: 4px;
+        border: 1px solid #c6c6c6;
+    }
+    .sec4>article{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .sec4>article>.half{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec4>article>div, .sec4>article>.half>div{
+        width: calc(50% - 10px);
+        height: 250px;
+        box-sizing: border-box;
+    }
+    /*h4 타이틀 공용*/
+    .sec4 .s4_h4{
+        font-size:24px;
+        font-weight: bold;
+        color: #fe7a4a;
+        position: relative;
+    }
+    .sec4 .s4_h4::after{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fe7a4a;
+        position: absolute;
+        left: 0;
+        bottom:-15px;
+    }
+    /*노원문화참여마당*/
+    .sec4 .s4_party{
+        background: url('../img/main_s4_party.png') center no-repeat;
+        background-size: cover;
+        text-align: center;
+        border: 0;
+        box-sizing: border-box;
+        padding: 40px 0 0;
+    }
+    .sec4 .s4_party>span{
+        color: #FFC0A9;
+    }
+    .sec4 .s4_party>h3{
+        font-size: 30px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .sec4 .s4_party>div{
+        width: 75%;
+        margin:20px  auto 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .sec4 .s4_party>div>a{
+        display: block;
+        width: calc(33.3333% - 10px);
+        border: 1px solid #fff;
+        color: #Fff;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .sec4 .s4_party>div>a:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    /*대관안내*/
+    .sec4 .s4_lent{
+        padding: 40px 40px 0 40px;  
+    }
+    .sec4 .s4_lent>p{
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    .sec4 .s4_lent>a{
+        margin-top: 20%;
+        display: inline-block;
+        padding-right: 10px;
+        font-size: 14px;
+        line-height: 30px;
+        color: #fe7a4a;
+        background: url('../img/main_link01.png') right center no-repeat;
+    }
+    /*기부.후원*/
+    .sec4 .s4_sup{
+        padding: 40px 40px 0 40px;  
+    }
+    .sec4 .s4_sup>h4>a{
+        display: block;
+        width: 36px;
+        padding-top: 36px;
+        background: url('../img/main_plus.png') center no-repeat;
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+    .sec4 .s4_sup>div{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .sec4 .s4_sup>div>span{
+        display: block;
+        width: calc(50% - 5px);
+        padding-top:calc(50% - 5px);
+        background: url('../img/main_dona.png')top center no-repeat;
+        background-size: contain;
+    }
+    .sec4 .s4_sup>div>p{
+        width: calc(50% - 5px);
+        font-size: 14px;
+    }
+    /*노원문화지도*/
+    .sec4 .s4_ctmap{
+        background: #f8f8f8 url('../img/main_ctmap.png') left center no-repeat;
+        background-size: contain;
+        padding: 50px 0 0 130px;
+    }
+    .sec4 .s4_ctmap>h3{
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    .sec4 .s4_ctmap>h3>span{
+        color: #fe7a4a;
+    }
+    .sec4 .s4_ctmap>a{
+        margin-top: 30px;
+        display: inline-block;
+        padding-right: 10px;
+        font-size: 14px;
+        line-height: 30px;
+        color: #333;
+        background: url('../img/main_link02.png') right center no-repeat;
+    }
+    /*노원구민의전당.노원문화의집*/
+    .sec4 .s4_nowon>div{
+        height: 115px;
+        padding: 27px 0 0 110px;
+        box-sizing: border-box;
+    }
+    .sec4 .s4_nowon>div>h5{
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+    }
+    .sec4 .s4_nowon>div>h5::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 60px;
+        background-color: #fe7a4a;
+        top:0;
+        left: -20px;
+    }
+    .sec4 .s4_nowon>div>a{
+        display: inline-block;
+        padding-right: 10px;
+        font-size: 14px;
+        line-height: 30px;
+        color: #fe7a4a;
+        background: url('../img/main_link01.png') right center no-repeat;
+    }
+    .sec4 .s4_nowon>.s4_nw_top{
+        margin-bottom: 20px;
+    }
+    .sec4 .s4_nowon>.s4_nw_top{
+        background: url('../img/main_nw_top.png') left 20px center no-repeat;
+        background-size: 50px auto;
+    }
+    .sec4 .s4_nowon>.s4_nw_pers{
+        background: url('../img/main_nw_pers.png') left 20px center no-repeat;
+        background-size: 50px auto;
+    }
+    /*웹툰*/
+    .sec4 .s4_weptt{
+        padding: 40px 40px 0;
+        display: flex;
+    }
+    .sec4 .s4_weptt>.weptt_title{
+        width: 140px;
+    }
+    .sec4 .s4_weptt>.weptt_title>div{
+        display: flex;
+        margin-top: 85px;
+    }
+    .sec4 .s4_weptt>.weptt_title>div>span{
+        display: block;
+        width: 47px;
+        padding-top: 47px;
+        border: 1px solid #c6c6c6;
+        cursor: pointer;
+    }
+    .sec4 .s4_weptt>.weptt_title>div>.weptt_left{
+        background: url('../img/main_weptt_left.png') center no-repeat;
+        background-size: 10px;
+        margin-right: 1px;
+    }
+    .sec4 .s4_weptt>.weptt_title>div>.weptt_right{
+        background: url('../img/main_weptt_right.png') center no-repeat;
+        background-size: 10px;
+    }
+    .sec4 .s4_weptt>.weptt_box{
+        width: calc(100% - 140px);
+        height: 180px;
+        overflow: hidden;
+        position:relative;
+    }
+    .sec4 .s4_weptt>.weptt_box>div{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top:0;
+        display: flex; 
+        justify-content: space-between; 
+        flex-wrap: nowrap;   
+        transition: 0.5s;
+    }
+    .sec4 .s4_weptt>.weptt_box>div>a{
+        width: calc(50% - 5px);
+        flex-shrink: 0;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+    .sec4 .s4_weptt>.weptt_box>div>a>img{
+        width: 100%;
+    }
+
+
+@media screen and (max-width: 1280px){
+    /*section4 공통*/    
+    .sec4{
+        width: 100%;
+    }
+   /*기부.후원*/
+    .sec4 .s4_sup>div>span{
+        width: calc(37% - 5px);
+        padding-top:calc(50% - 5px);
+        background-size: cover;
+    }
+    .sec4 .s4_sup>div>p{
+        width: calc(63% - 5px);
+    }
+    /*노원문화지도*/
+    .sec4 .s4_ctmap{
+        background: #f8f8f8 url('../img/main_ctmap_op.png') left center no-repeat;
+        background-size: contain;
+        padding: 50px 0 0 13%;
+    }
+    /*노원구민의전당.노원문화의집*/
+    .sec4 .s4_nowon>div{
+        padding: 27px 0 0 35%;
+    }
+    .sec4 .s4_nowon>.s4_nw_top{
+        background: url('../img/main_nw_top.png') left 10px center no-repeat;
+        background-size: 17% auto;
+    }
+    .sec4 .s4_nowon>.s4_nw_pers{
+        background: url('../img/main_nw_pers.png') left 10px center no-repeat;
+        background-size: 17% auto;
+    }
+    /*웹툰*/
+    .sec4 .s4_weptt>.weptt_title{
+        width: 110px;
+    }
+    .sec4 .s4_weptt>.weptt_box{
+        width: calc(100% - 110px);
+        height: 180px;
+        overflow: hidden;
+    }
+    .sec4 .s4_weptt>.weptt_title>div{
+        display: flex;
+        margin-top: 105px;
+    }
+    .sec4 .s4_weptt>.weptt_title>div>span{
+        width: 35px;
+        padding-top: 35px;
+    }
+    .sec4 .s4_weptt>.weptt_box>div>a>img{
+        width: auto;
+        height: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 960px){
+   /**/    
+   main{
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 30px;
+    display: block;
+    }
+    /*section4 공통*/    
+    .sec4>article{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .sec4>article>.half{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec4>article>div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /*기부.후원*/
+    .sec4 .s4_sup>div>span{
+        width: 105px;
+        padding-top:110px;
+        background-size: cover;
+    }
+    .sec4 .s4_sup>div>p{
+        width: calc(100% - 110px);
+    }
+    /*노원구민의전당.노원문화의집*/
+    .sec4 .s4_nowon>div{
+        padding: 27px 0 0 110px;
+    }
+    .sec4 .s4_nowon>.s4_nw_top{
+        background: url('../img/main_nw_top.png') left 20px center no-repeat;
+        background-size: 50px auto;
+    }
+    .sec4 .s4_nowon>.s4_nw_pers{
+        background: url('../img/main_nw_pers.png') left 20px center no-repeat;
+        background-size: 50px auto;
+    }
+    /*웹툰*/
+    .sec4 .s4_weptt>.weptt_title{
+        width: 150px;
+    }
+    .sec4 .s4_weptt>.weptt_box{
+        width: calc(100% - 150px);
+        height: 180px;
+        overflow: hidden;
+    }
+    .sec4 .s4_weptt>.weptt_box>div>a{
+        width: calc(33.33333% - 5px);
+    }
+
+
+
+
+}
+@media screen and (max-width: 720px){
+    main{
+        padding:0 15px;
+    }
+    /*노원문화참여마당*/
+    .sec4 .s4_party>div{
+        width: 85%;
+    }
+    .sec4 .s4_party>div>a{
+        display: block;
+        width: calc(33.3333% - 10px);
+        border: 1px solid #fff;
+        color: #Fff;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .sec4 .s4_party>div>a:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /*대관안내*/
+    .sec4 .s4_lent{
+        padding: 30px 20px 0 20px;  
+    }
+    .sec4 .s4_lent>a{
+        margin-top: 20%;
+    }
+    /*기부.후원*/
+    .sec4 .s4_sup{
+        padding: 30px 20px 0 20px;
+    }
+    .sec4 .s4_sup>h4>a{
+        display: block;
+        width: 36px;
+        padding-top: 36px;
+        background: url('../img/main_plus.png') center no-repeat;
+        position: absolute;
+        right: 0;
+        top:0;
+
+    }
+    .sec4 .s4_sup>div>span{
+        display: none;
+    }
+    .sec4 .s4_sup>div>p{
+        width: 100%;
+    }
+    /*노원문화지도*/
+    .sec4 .s4_ctmap{
+        padding: 50px 0 0 5%;
+    }
+    /*노원구민의전당.노원문화의집*/
+    .sec4 .s4_nowon>div{
+        height: 115px;
+        padding: 27px 0 0 15px;
+        box-sizing: border-box;
+    }
+    .sec4 .s4_nowon>div>h5{
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+    }
+    .sec4 .s4_nowon>div>h5::after{
+        display: none;
+    }
+    .sec4 .s4_nowon>.s4_nw_top{
+        margin-bottom: 20px;
+    }
+    .sec4 .s4_nowon>.s4_nw_top{
+        background: url('../img/main_nw_top_m.png') right 15px center no-repeat;
+        background-size: 50px auto;
+    }
+    .sec4 .s4_nowon>.s4_nw_pers{
+        background: url('../img/main_nw_pers_m.png') right 15px center no-repeat;
+        background-size: 50px auto;
+    }
+    /*웹툰*/
+    .sec4 .s4_weptt>.weptt_title{
+        width: 110px;
+    }
+    .sec4 .s4_weptt>.weptt_box{
+        width: calc(100% - 110px);
+        height: 180px;
+        overflow: hidden;
+    }
+    .sec4 .s4_weptt>.weptt_box>div>a{
+        width: calc(50% - 5px);
+    }
+
+    
+}
+@media screen and (max-width: 480px){
+    /*웹툰*/
+    .sec4 .s4_weptt>.weptt_title{
+        width: calc(100% - 200px);
+    }
+    .sec4 .s4_weptt>.weptt_box{
+        width: 200px;
+    }
+    .sec4 .s4_weptt>.weptt_box>div>a{
+        width: 200px;
+    }
+    .sec4 .s4_weptt>.weptt_box>div>a>img{
+        width: auto;
+        height: 100%;
+    }
+    /*웹툰*/
+    .sec4 .s4_weptt>.weptt_title{
+        width: 100px;
+    }
+    .sec4 .s4_weptt>.weptt_box{
+        width: calc(100% - 100px);
+        height: 180px;
+        overflow: hidden;
+    }
+    .sec4 .s4_weptt>.weptt_box>div>a{
+        width: 100%;
+    }
+
+
+
+
+}

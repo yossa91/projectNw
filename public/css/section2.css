@@ -1,0 +1,171 @@
+.sec2{
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.sec2_head{
+    text-align: center;
+}
+.sec2_head>h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.sec2_cont{
+    position: relative;
+}
+.event_tab{
+    display: flex;
+    margin: 0 auto 40px;
+    justify-content: center;
+}
+.event_tab>li{
+    position: relative;
+    cursor: pointer;
+}
+.event_tab>li:not(:first-of-type) {
+    margin-left: 15px;
+    padding-left: 14px;
+}
+.event_tab>li:not(:first-of-type):before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -4px;
+    width: 1px;
+    background: #ccc;
+    height: 12px;
+}
+
+.event_tab>li.active{
+    font-weight: 600;
+    color: #fe7a4a;
+}
+.event_cont{
+    width: 100%;
+    display: none;
+    position: relative;
+    overflow: hidden;
+}
+.current{
+    display: block;
+}
+.arrows{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 23px;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+
+}
+.left_arrow{
+    background: url(../img/cv_left.png) no-repeat center center;
+    left: -40px;
+    z-index: 99;
+}
+.right_arrow{
+    background: url(../img/cv_right.png) no-repeat center center;
+    right: -40px;
+    z-index: 99;
+}
+.event_item{
+    flex-direction: column;
+}
+.event_img{
+    position: relative;
+    box-shadow: 4px 4px 4px hsl(0deg 0% 0% / 25%);
+}
+.event_img>img{
+    width: 100%;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    background: rgba(1,1,1,.8);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.event_img:hover .cover{
+    display: block;
+}
+.cover>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.cover>a>h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.cover>a>p{
+    margin-bottom: 5px;
+}
+.cover>a>.detail{
+    width: 110px;
+    height: 35px;
+    border: 1px solid #fff;
+    margin: 20px auto 0;
+    line-height: 35px;
+}
+.event_txt{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+.event_txt>a{
+    color: #333;
+    font-size: 16px;
+}
+.event_txt>p{
+    font-size: 14px;
+    color: #666;
+}
+.emptyTxt{
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    padding: 6em 0 6em 0;
+}
+.emptyTxt::before{
+    content: url(../img/main/empty_acc.jpg);
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 0.25em;
+}
+
+@media only screen and (max-width: 1280px){
+    .left_arrow{
+        left: 0px;
+    }
+    .right_arrow{
+        right: 0px;
+    }
+
+}
+@media only screen and (max-width: 960px){
+    .event_tab>li>a {
+        font-size: 18px;
+    }
+    .event_tab>li>a {
+        font-size: 14px;
+    }
+    .event_txt>a{
+        font-size: 14px;
+    }
+    .event_txt>p{
+        font-size: 12px;
+    }
+
+}
+@media only screen and (max-width: 720px){
+
+
+}
