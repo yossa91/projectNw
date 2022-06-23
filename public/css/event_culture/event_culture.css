@@ -12,7 +12,7 @@
     line-height: 84px;
     padding-left: 35px;
     border-bottom: 1px solid #fe7a4a;
-    background: url(/img/event/title_icon.png) left center no-repeat;
+    background: url(/img/common/title_icon.png) left center no-repeat;
     background-size: 25px 25px;
     margin-bottom: 50px;
 }
@@ -125,10 +125,10 @@
 .page_left {
     background: url(/img/event/icon_pre.png) center center no-repeat;
 }
-.page_right {
+.page_a_right {
     background: url(/img/event/icon_nex.png) center center no-repeat;
 }
-.page_a_right {
+.page_right {
     background: url(/img/event/icon_a_nex.png) center center no-repeat;
 }
 
