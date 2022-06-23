@@ -1,0 +1,92 @@
+
+        <section>
+            <div class="ftTop ftWrap">
+                <div class="siteUse">
+                    <a href=""><span>개인정보처리방침</span></a>
+                    <a href="">이용약관</a>
+                    <a href="">사이트맵</a>
+                </div>
+                <div class="fttop_right">
+                    <div class="ftSns">
+                        <a href="" class="ft_fb"></a>
+                        <a href="" class="ft_yb"></a>
+                        <a href="" class="ft_ca"></a>
+                        <a href="" class="ft_bd"></a>
+                        <a href="" class="ft_cf"></a>
+                        <a href="" class="ft_bg"></a>
+                        <a href="" class="ft_it"></a>
+                    </div>
+                    <div class="familySite">
+                        <a class="fsBtn">문화원바로가기</a>
+                        <ul class="famSlideMenu">
+                            <li>
+                                <a href="http://www.kccf.or.kr:8080/dspv1User/UserMain.do" target="_blank">
+                                    한국문화원연합회
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://seoulccf.or.kr/mpage" target="_blank" id="test">
+                                    서울시문화원연합회
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://종로문화원.kr/" target="_blank">
+                                    서울종로문화원
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.junggucc.or.kr/" target="_blank">
+                                    서울중구문화원
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://yongsan.kccf.or.kr/" target="_blank">
+                                    서울용산문화원
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--familySite-->
+                </div>
+            </div><!--ftWrap-->
+        </section>
+            <div class="ftBot ftWrap">
+                <div class="ftbto_logo"></div>
+                <div class="ftbto_info">
+                    <ul>
+                        <li><span>주소 :</span> (01851) 서울특별시 노원구 동일로 197길 24(공릉동)</li>
+                        <li><span>전화 :</span> 02-6380-0022~3</li>
+                        <li><span>팩스 : </span>02-938-1247</li>
+                        <li><span>대표메일 : </span>nwcc@nwcc.or.kr</li>
+                    </ul>
+                    <ul>
+                        <li><span>상호 : </span>노원문화원 <span>사업자등록번호 : </span>217-82-03504</li>
+                        <li><span>대표자 : </span>오치정</li>
+                    </ul>
+                    <p>Copyright(c) nwcc.or.kr. All rights reserved.</p>
+                </div>
+            </div>
+
+
+    <script>
+        
+
+var famSite = document.querySelector('.fsBtn');
+var famSiteList = document.querySelector('.famSlideMenu');
+var famSLHeight = famSiteList.scrollHeight;
+famSite.addEventListener('click',function(){
+    famSiteList.style.height = famSLHeight + 'px';
+});
+document.body.onclick = function(){
+    if(famSiteList.clientHeight >  0){
+        famSiteList.style.height = 0;
+    }
+}
+var famSlideDw = document.querySelectorAll('.famSlideMenu>li>a');
+famSlideDw.forEach(function(el,idx){
+    famSlideDw[idx].onclick = function(){
+        famSiteList.style.height = 0;
+    }
+});
+
+    </script>
+
