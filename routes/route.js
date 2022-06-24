@@ -144,7 +144,7 @@ const multer = require('multer');
 //파일 저장위치, 파일이름 생성
 const storage = multer.diskStorage({
   destination : function (req, file, cb) {
-    cb(null, '../upload')
+    cb(null, './upload')
   },
   //파일이름설정
 filename: function (req, file, cb) {
