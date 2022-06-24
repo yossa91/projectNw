@@ -199,7 +199,7 @@ router.post('/store', [check('title').isByteLength({min:1 , max:100})], function
 //파일다운로드
 router.get('/download/:upload', (req, res) => {
   const filename = req.params.upload;
-  const file = __dirname + '/../upload/' + filename;
+  const file = __dirname + '/upload/' + filename;
   res.download(file);
 });
 
