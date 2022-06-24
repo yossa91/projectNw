@@ -6,12 +6,12 @@
                 </div>
                 <div>
                     <ul class="side_menu">
-                        <li><a href="#" class="side_menu_on"><!--선택메뉴에 클래스 이동-->
+                        <li  class="side_list"><a href="#" ><!--선택메뉴에 클래스 이동-->
                             노원 역사문화
                         </a>
                             <!--메뉴 내 서브메뉴(서브메뉴 없다면 ul째로 삭제)-->
                             <ul class="side_submenu">
-                                <li><a href="vision" class="side_submenu_on"><!--선택메뉴에 클래스 이동-->
+                                <li ><a href="vision" class="side_submenu_on"><!--선택메뉴에 클래스 이동-->
                                     노원의 비전과 상징
                                 </a></li>
                                 <li><a href="history_nowon">
@@ -19,17 +19,34 @@
                                 </a></li>
                             </ul>
                         </li>
-                        <li><a href="/history_Wolgye">
+                        <li  class="side_list"><a href="#">
                             노원관광지도
                         </a>
+                            <ul class="side_submenu">
+                                <li><a href="history_Wolgye"><!--선택메뉴에 클래스 이동-->
+                                    월계동
+                                </a></li>
+                                <li><a href="#">
+                                    공릉동
+                                </a></li>
+                                <li><a href="history_Sanggye">
+                                    상계동
+                                </a></li>
+                                <li><a href="#">
+                                    중계동
+                                </a></li>
+                                <li><a href="#">
+                                    하계동
+                                </a></li>
+                            </ul>
                         </li>
-                        <li><a href="nongyo">
+                        <li  class="side_list"><a href="nongyo">
                             마들농요
                         </a></li>
-                        <li><a href="#">
+                        <li  class="side_list"><a href="#">
                             사진 앨범
                         </a></li>
-                        <li><a href="#">
+                        <li  class="side_list"><a href="#">
                             동영상 앨범
                         </a></li>
                     </ul>
@@ -53,7 +70,7 @@
                     <h2><span></span>노원의 상징</h2>
                     <h3><span class="fff"></span>엠블렘</h3>
                     <div class="symbol">
-                        <div class="symbol_img"><img src="/img/symbol/emblem.png"></div>
+                        <div class="symbol_img"><img src="/그린씽/"></div>
                         <div class="symbol_txt"><p></p>
                             <h4>구새(鳥)인 산비둘기와 구 꽃인 산철쭉을 바탕으로
                             힐링 · 문화 · 건강복지 · 교육 · 교통도시를 추구하는 노원구의 이상을 형상화</h4></div>
@@ -104,8 +121,10 @@
                         <img src="/img/symbol/img-sing-bottom.jpg">
                     </div>
                     <audio controls>
-                        <source src="/img/audio/nownsing.mp3" type="audio/mp3">
+                        <source src="/img/audio/합창(노원구합창단).mp3" type="audio/mp3">
                     </audio>
                 </article>
             </div>
         </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../js/sidemenu.js"></script>
