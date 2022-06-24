@@ -13,6 +13,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(expressLayouts);
 app.use(cookieParser());
 app.use(logger('dev'));
+app.use('/upload', express.static('upload'));
 
 app.use('/',homes);  //미들웨어 등록
 
