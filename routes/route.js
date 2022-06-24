@@ -143,33 +143,41 @@ const storage = multer.diskStorage({
     cb(null, './upload')
   },
   //파일이름설정
-  filename: function (req, file, cb) {
+filename: function (req, file, cb) {
     cb(null , Date.now() + '-' + file.originalname)
   }
 });
- //파일 업로드 모듈
-  const upload = multer({ storage: storage })
+const fileFilter = (req, file, cb) => {
+  if(file == undefined || file == null){
+    cb(null, true);
+  }
+}
 
-  //수정------------그냥 글 안올라감 ;;------------------------
-router.get('/create',(req,res) => {
-  res.render('nowon_iC_create');  
-});
-router.post('/store', upload.single('upload'), [check('title').isByteLength({min:1 , max:100})],
-  function(req,res, next){
-    let errs = validationResult(req);
-        console.log(errs);
-    if(errs['errors'].length > 0){
-      res.render('create',{errs : errs['errors']});
-    }else{
-      let param = JSON.parse(JSON.stringify(req.body));
-      let title = param['title'];
-      let description = param['description'];
-      let upload = req.file.filename;
-      db.insertMemo(title,description,upload, function(){
-        console.log(upload);
-        res.redirect('/nowon_introConduct');
-      });
-    }
+//파일 업로드 모듈
+const upload = multer({ storage: storage, fileFilter: fileFilter }).single('upload')
+
+router.post('/store', [check('title').isByteLength({min:1 , max:100})], function(req,res, cb){
+  upload(req, res, err => {
+      if (err) {
+      return res.json({ success: false, err })
+      }
+      else{
+        let param = JSON.parse(JSON.stringify(req.body));
+        let title = param['title'];
+        let description = param['description'];
+        let upload = req.file?.originalname;
+        if(upload == undefined){
+          upload = '';
+          db.insertMemo(title,description,upload, function(){
+            res.redirect('/');
+          });
+        }else{
+          db.insertMemo(title,description,upload, function(){
+            res.redirect('/');
+          });
+       }
+      }
+    });
   });
 
 
