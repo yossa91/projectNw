@@ -144,7 +144,7 @@ const multer = require('multer');
 //파일 저장위치, 파일이름 생성
 const storage = multer.diskStorage({
   destination : function (req, file, cb) {
-    cb(null, './upload')
+    cb(null, '/../upload')
   },
   //파일이름설정
 filename: function (req, file, cb) {
@@ -172,7 +172,7 @@ router.post('/store', [check('title').isByteLength({min:1 , max:100})], function
         let title = param['title'];
         let description = param['description'];
         let upload = req.file?.originalname;
-        if(upload == undefined){
+        if(upload == undefined || upload == null){
           upload = '';
           db.insertMemo(title,description,upload, function(){
             res.redirect('/nowon_introConduct');
