@@ -40,13 +40,13 @@ exports.search_process = function(seachbox, searchText, callback){
 //페이지추가
 exports.insertMemo = function(title,description,upload, callback){
     //파일유무 확인
-    if(upload != undefined || upload != null || upload != ''){
+    if(upload !== undefined){
     connection.query(`INSERT INTO status(title,description,upload,day,hit) VALUES('${title}','${description}','${upload}',now(),'0')`, (err, result) => {
         if(err) throw err;
         callback();
     });
     }else{
-        connection.query(`INSERT INTO status(title,description,day,hit) VALUES('${title}','${description}',now(),'0')`, (err, result) => {
+        connection.query(`INSERT INTO status(title,description,upload,day,hit) VALUES('${title}','${description}',1,now(),'0')`, (err, result) => {
             if(err) throw err;
             callback();
         });
