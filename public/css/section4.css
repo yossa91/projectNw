@@ -27,7 +27,7 @@
     /*h4 타이틀 공용*/
     .sec4 .s4_h4{
         font-size:24px;
-        font-weight: bold;
+        font-weight: 500;
         color: #fe7a4a;
         position: relative;
     }
@@ -56,7 +56,7 @@
     .sec4 .s4_party>h3{
         font-size: 30px;
         color: #fff;
-        font-weight: bold;
+        font-weight: 500;
     }
     .sec4 .s4_party>div{
         width: 75%;
@@ -91,7 +91,7 @@
         font-size: 14px;
         line-height: 30px;
         color: #fe7a4a;
-        background: url('../img/main_link01.png') right center no-repeat;
+        background: url('/img/main_link01.png') right center no-repeat;
     }
     /*기부.후원*/
     .sec4 .s4_sup{
@@ -101,7 +101,7 @@
         display: block;
         width: 36px;
         padding-top: 36px;
-        background: url('../img/main_plus.png') center no-repeat;
+        background: url('/img/main_plus.png') center no-repeat;
         position: absolute;
         right: 0;
         top:0;
@@ -115,7 +115,7 @@
         display: block;
         width: calc(50% - 5px);
         padding-top:calc(50% - 5px);
-        background: url('../img/main_dona.png')top center no-repeat;
+        background: url('/img/main_dona.png')top center no-repeat;
         background-size: contain;
     }
     .sec4 .s4_sup>div>p{
@@ -124,13 +124,13 @@
     }
     /*노원문화지도*/
     .sec4 .s4_ctmap{
-        background: #f8f8f8 url('../img/main_ctmap.png') left center no-repeat;
+        background: #f8f8f8 url('/img/main_ctmap.png') left center no-repeat;
         background-size: contain;
         padding: 50px 0 0 130px;
     }
     .sec4 .s4_ctmap>h3{
         font-size: 30px;
-        font-weight: bold;
+        font-weight: 500;
         line-height: 40px;
     }
     .sec4 .s4_ctmap>h3>span{
@@ -143,7 +143,7 @@
         font-size: 14px;
         line-height: 30px;
         color: #333;
-        background: url('../img/main_link02.png') right center no-repeat;
+        background: url('/img/main_link02.png') right center no-repeat;
     }
     /*노원구민의전당.노원문화의집*/
     .sec4 .s4_nowon>div{
@@ -172,17 +172,17 @@
         font-size: 14px;
         line-height: 30px;
         color: #fe7a4a;
-        background: url('../img/main_link01.png') right center no-repeat;
+        background: url('/img/main_link01.png') right center no-repeat;
     }
     .sec4 .s4_nowon>.s4_nw_top{
         margin-bottom: 20px;
     }
     .sec4 .s4_nowon>.s4_nw_top{
-        background: url('../img/main_nw_top.png') left 20px center no-repeat;
+        background: url('/img/main_nw_top.png') left 20px center no-repeat;
         background-size: 50px auto;
     }
     .sec4 .s4_nowon>.s4_nw_pers{
-        background: url('../img/main_nw_pers.png') left 20px center no-repeat;
+        background: url('/img/main_nw_pers.png') left 20px center no-repeat;
         background-size: 50px auto;
     }
     /*웹툰*/
@@ -205,12 +205,12 @@
         cursor: pointer;
     }
     .sec4 .s4_weptt>.weptt_title>div>.weptt_left{
-        background: url('../img/main_weptt_left.png') center no-repeat;
+        background: url('/img/main_weptt_left.png') center no-repeat;
         background-size: 10px;
         margin-right: 1px;
     }
     .sec4 .s4_weptt>.weptt_title>div>.weptt_right{
-        background: url('../img/main_weptt_right.png') center no-repeat;
+        background: url('/img/main_weptt_right.png') center no-repeat;
         background-size: 10px;
     }
     .sec4 .s4_weptt>.weptt_box{
@@ -256,7 +256,7 @@
     }
     /*노원문화지도*/
     .sec4 .s4_ctmap{
-        background: #f8f8f8 url('../img/main_ctmap_op.png') left center no-repeat;
+        background: #f8f8f8 url('/img/main_ctmap_op.png') left center no-repeat;
         background-size: contain;
         padding: 50px 0 0 13%;
     }
@@ -265,11 +265,11 @@
         padding: 27px 0 0 35%;
     }
     .sec4 .s4_nowon>.s4_nw_top{
-        background: url('../img/main_nw_top.png') left 10px center no-repeat;
+        background: url('/img/main_nw_top.png') left 10px center no-repeat;
         background-size: 17% auto;
     }
     .sec4 .s4_nowon>.s4_nw_pers{
-        background: url('../img/main_nw_pers.png') left 10px center no-repeat;
+        background: url('/img/main_nw_pers.png') left 10px center no-repeat;
         background-size: 17% auto;
     }
     /*웹툰*/
@@ -321,16 +321,16 @@
     .sec4 .s4_sup>div>p{
         width: calc(100% - 110px);
     }
-    /*노원구민의전당.노원문화의집*/
+    /*노원구민의전당.노원문화의집*/main_link
     .sec4 .s4_nowon>div{
         padding: 27px 0 0 110px;
     }
     .sec4 .s4_nowon>.s4_nw_top{
-        background: url('../img/main_nw_top.png') left 20px center no-repeat;
+        background: url('/img/main_nw_top.png') left 20px center no-repeat;
         background-size: 50px auto;
     }
     .sec4 .s4_nowon>.s4_nw_pers{
-        background: url('../img/main_nw_pers.png') left 20px center no-repeat;
+        background: url('/img/main_nw_pers.png') left 20px center no-repeat;
         background-size: 50px auto;
     }
     /*웹툰*/
@@ -383,7 +383,7 @@
         display: block;
         width: 36px;
         padding-top: 36px;
-        background: url('../img/main_plus.png') center no-repeat;
+        background: url('/img/main_plus.png') center no-repeat;
         position: absolute;
         right: 0;
         top:0;
@@ -417,11 +417,11 @@
         margin-bottom: 20px;
     }
     .sec4 .s4_nowon>.s4_nw_top{
-        background: url('../img/main_nw_top_m.png') right 15px center no-repeat;
+        background: url('/img/main_nw_top_m.png') right 15px center no-repeat;
         background-size: 50px auto;
     }
     .sec4 .s4_nowon>.s4_nw_pers{
-        background: url('../img/main_nw_pers_m.png') right 15px center no-repeat;
+        background: url('/img/main_nw_pers_m.png') right 15px center no-repeat;
         background-size: 50px auto;
     }
     /*웹툰*/

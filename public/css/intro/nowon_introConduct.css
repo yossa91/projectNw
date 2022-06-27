@@ -137,30 +137,56 @@
         width: 100%;
         box-sizing: border-box;
         margin: auto;
-        padding-top: 50px;
+    }
+    .it_writeBox_tt{
+        font-size: 20px;
+        font-weight: 500;
+        padding:30px 20px 30px;
+        background: url('/img/common/sidemenu_sub_on.png')left center no-repeat;
     }
     .it_wB_title{
         width: 100%;
         padding-left: 10px;
+        margin-bottom: 15px;
         box-sizing: border-box;
         outline: none;
         line-height: 22px;
+        border: 1px solid #b6b6b6;
     }
     .it_wB_title:foucs ,.it_wB_description:focus { outline: none; }
     .it_wB_description{
         padding: 10px;
         box-sizing: border-box;
+        margin-bottom: 15px;
         width: 100%;
         height: 350px;
         outline: none;
         resize: none;
+        border: 1px solid #b6b6b6;
+    }
+    .it_writeBox>form{
+        padding: 0 20px;
+    }
+    .it_wb_btn{
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 30px;
+        border-top: 1px solid #b6b6b6;
+    }
+    .it_wb_btn>input{
+        padding: 5px 20px;
+        background-color: #fe7a4a;
+        border-radius: 4px;
+        color: #fff;
+        border: 0;
+        cursor: pointer;
     }
     /*---------------page.ejs css----------------*/
     .it_readBox{
         width: 100%;
         box-sizing: border-box;
         margin: auto;
-        padding-top: 50px;
+        padding-top: 30px;
     }
     .it_rB_btn{
 
@@ -183,13 +209,30 @@
     }
     .it_rB_dsc>.it_rB__day{
         font-size: 14px;
-        padding: 10px 0 30px 15px;
+        padding: 10px 0 15px 15px;
         color: #b6b6b6;
         border-bottom: 1px solid #b6b6b6;
         background-color: #f8f8f8;
     }
-    .it_rB_dsc>.it_rB__dsc{
-        padding: 20px 0 0 15px;
+    .it_rB__dsc{
+        padding: 30px 15px;
+    }
+    .it_rB_file{
+        padding: 15px;
+        border-top: 1px solid #b6b6b6;
+        border-bottom: 1px solid #b6b6b6;
+    }
+    .it_rB__file{
+        color: #b6b6b6;
+        padding-left: 15px;
+    }
+    .it_rB_back{
+        display: inline-block;
+        padding: 5px 20px;
+        background-color: #fe7a4a;
+        color: #fff;
+        margin: 30px 0 0 15px;
+        border-radius: 4px;
     }
 
 @media screen and (max-width: 1280px){

@@ -49,9 +49,15 @@
                     <div class="it_rB_dsc">
                         <h3 class="it_rB__title"><%= result[0].title %></h3>
                         <p class="it_rB__day"><%= result[0].day %></p>
-                        <p class="it_rB__dsc"><pre><%= result[0].description %></pre></p>   
-                        <p class="it_rB__dsc"><a href='/download/<%= result[0].upload %>'><%= result[0].upload%></a></p>
                     </div>
+                    <div class="it_rB__dsc">
+                        <pre><%= result[0].description %></pre>   
+                    </div>
+                    <div class="it_rB_file">
+                        <span>첨부파일</span>
+                        <p class="it_rB__file"><a href='/download/<%= result[0].upload %>'><%= result[0].upload%></a></p>
+                    </div>
+                    <a href="/nowon_introConduct" class="it_rB_back">목록</a>
                 </div>
         </div><!--intro-->
 </div>

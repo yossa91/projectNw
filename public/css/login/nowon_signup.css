@@ -6,8 +6,7 @@
     }
     .signupTt{
         display: flex;
-        padding-top: 50px;
-        height: 60px;
+        padding: 40px 0 20px;
         justify-content: space-between;
         align-items: center;
     }
@@ -111,7 +110,7 @@
     }
     .signupCf button{
         border: 0;
-        line-height: 42px;
+        line-height: 40px;
         padding: 0 60px;
         border-radius: 4px;
         cursor: pointer;

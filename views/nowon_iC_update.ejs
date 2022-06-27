@@ -42,14 +42,15 @@
         <div class="intro">
             <h2>운영현황</h2>
             <div class="it_writeBox">
-                <h3>운영현황 게시글 작성</h3>
+                <h3 class="it_writeBox_tt">운영현황 게시글 작성</h3>
                 <form action="/update/<%= row[0].no %>" method="POST">
                     <p>제목</p>
                     <input type="text" name="title" class="it_wB_title" value="<%= row[0].title %>">
                     <p>내용작성</p>
                     <textarea name="description" class="it_wB_description"><%= row[0].description %></textarea>
+                    <p>파일첨부</p>
                     <input type="file" name="upload">
-                    <div>
+                    <div class="it_wb_btn">
                         <input type="submit" value="작성완료">
                         <input type="button" value="취소" onclick="javascript:location.href='/'">
                     </div>

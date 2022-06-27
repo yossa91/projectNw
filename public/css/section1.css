@@ -82,10 +82,10 @@
     display: flex;
 }
 
-.s1_tab a {
-    font-size: 24px;
+.s1_tab>div>a {
+    font-size: 18px;
     line-height: 30px;
-    color: #fe7a4a;
+    font-weight: 500;
 }
 
 .s1_tab a:last-child {
@@ -95,13 +95,14 @@
 .tab_active {
     padding-bottom: 10px;
     border-bottom: 3px solid #fe7a4a;
+    color: #fe7a4a;
 }
 
 .s1_plus {
     display: block;
     width: 30px;
     height: 30px;
-    background: url(../img/main/sec1/plus.png) no-repeat center center;
+    background: url('/img/main_plus.png') no-repeat center center;
 }
 
 .s1_notice_list a {
