@@ -30,12 +30,12 @@
         text-align: left;
     }
     .loginBox form div:first-of-type{
-        background: url('../img/nowon_login/login_user.png') left 10px center no-repeat;
+        background: url('/img/nowon_login/login_user.png') left 10px center no-repeat;
         background-size: auto 29px;
         margin-bottom: 7px;
     }
     .loginBox form div:last-of-type{
-        background: url('../img/nowon_login/login_pwd.png') left 14px center no-repeat;
+        background: url('/img/nowon_login/login_pwd.png') left 14px center no-repeat;
         background-size: auto 29px;
         margin-bottom: 20px;
     }

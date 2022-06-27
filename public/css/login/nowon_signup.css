@@ -78,7 +78,7 @@
         appearance: none;
         -moz-appearance: none;
         -webkit-appearance: none;
-        background: url('../img/nowon_login/intro_select.png') right 15px center no-repeat;
+        background: url('/img/nowon_login/intro_select.png') right 15px center no-repeat;
         background-size: 6px auto;
     }
     .signupPg>div select>option{
@@ -239,7 +239,7 @@
         font-size: 16px;
         line-height: 35px; 
         padding: 0 15px 0 5px;
-        background: url('../img/nowon_login/intro_select.png') right 7px center no-repeat;
+        background: url('/img/nowon_login/intro_select.png') right 7px center no-repeat;
         background-size: 6px auto;
     }
     .signupPg>div .w380{
