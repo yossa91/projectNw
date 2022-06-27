@@ -76,6 +76,9 @@
     padding-left: 10px;
     box-sizing: border-box;
 }
+.sing>p{
+    padding: 15px 5px;
+}
 .sing>img{
     width: 580px;
 }
