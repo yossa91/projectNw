@@ -8,7 +8,7 @@ const http = require('https');
 const cron = require('node-cron');
 
 //헤로쿠 아침 8시부터 11시까지
-cron.schedule(function(){
+cron.schedule('*/20 23,0-14 * * *',function(){
     http.get('https://nw5jo.herokuapp.com/');
 });
 
