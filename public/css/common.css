@@ -523,7 +523,7 @@ footer>section{
         overflow: hidden;
     }
 
-    .sitemap {
+    .menuMobi {
         display: block;
     }
    /*footer*/    
@@ -584,9 +584,7 @@ footer>section{
     .siteUse>a:first-of-type{
         padding-left: 25px;
     }
-    .sitemap {
-        display: block;
-    }
+
     .header_top, .gnb {
         display: none;
         overflow: hidden;
