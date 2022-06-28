@@ -4,6 +4,15 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var path = require('path');
 var expressLayouts = require('express-ejs-layouts');
+const http = require('https');
+const cron = require('node-cron');
+
+//헤로쿠 아침 8시부터 11시까지
+cron.schedule(function(){
+    http.get('https://nw5jo.herokuapp.com/');
+});
+
+
 
 var homes = require('./routes/route.js');
 
