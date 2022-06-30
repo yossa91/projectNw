@@ -37,15 +37,7 @@
     transform: translate(-50%, -50%);
     filter: drop-shadow(4px 4px 4px);
 }
-.commonWrap_box>section{
-    margin: 10px 0 20px;
-}
-.commonWrap_box h1{
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #333;
-}
-.commonWrap_box h1{
+.commonWrap_his_box h1{
     display: flex;
     align-items: center;
 }
@@ -157,7 +149,155 @@
     color: #333;
 }
 
+.modal_his{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;left: 0;
+    display: none;
+    z-index: 900;
+}
 
+.modal_his_content{
+    max-width: 600px;
+    min-width: 300px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    overflow-y: scroll;
+    z-index: 999;
+}
+    
+.his_info_wrap{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.info_his_box01{
+    width: 100%; 
+    padding: 25px;
+    border: 1px solid #c6c6c6;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.info_his_box01>div{
+    width: 100%;
+}
+.classimgH_wrap{
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.modal_his_img{
+    margin: auto;
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(/img/archive/Tombs.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.his_title{
+    width: 100%;
+}
+.his_title_txt>h1{
+    color: #333;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.23;
+    margin-bottom: 20px;
+}
+.his_p{
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.his_p>span{
+    display: block;
+}
+.his_pn{
+    color: #fff;
+    background-color: #fe7a4a;
+    padding: 0 7px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+.classH_info{
+    display: flex;
+}
+.classH_info>ul{
+    width: 100%;
+    padding: 20px 30px 0 0 ;
+}
+.classH_info li{
+    font-size: 12px;
+    padding: 5px 0;
+    border-bottom: 1px solid #e3e3e3;
+    vertical-align: bottom;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 600;
+    box-sizing: border-box;
+    display: flex;
+}
+.class_info li>span{
+    display: block;
+}
+.listH_title{
+    width: 30%;
+    min-width: 60px;
+    font-weight: 500;
+    color: #666;
+}
+.listH_data{
+    width: 70%;
+}
+.info_box02>h2{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.cSpan{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #fe7a4a;
+    margin-right: 10px;
+}
+.pBox{
+    margin-bottom: 20px;
+}
+.pBox>p{
+    padding: 10px 0;
+}
+.pBox>em{
+    display: flex;
+    align-items: center;
+}
+.wSpan{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #000;
+    margin-right: 4px;
+    box-sizing: border-box;
+}
+.btnL{
+    background-color: #fff;
+    border: 1px solid #fe7a4a;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
 
 
 
