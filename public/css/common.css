@@ -78,8 +78,6 @@ body {
     background-image: url(../img/header_footer/logo.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-right: 90px;
-
 }
 .gnbWrap{
     width: calc(100% + 40px);
